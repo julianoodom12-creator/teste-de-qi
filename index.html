@@ -1,0 +1,1642 @@
+<!DOCTYPE html>
+<html lang="pt-BR" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<title>Teste de QI | Avaliação cognitiva online</title>
+<meta name="description" content="Teste de QI profissional com raciocínio abstrato, matrizes visuais, lógica e sequências. Certificado em PDF grátis.">
+<meta name="application-name" content="Teste de QI">
+<meta name="keywords" content="Teste de QI, raciocínio, matrizes, avaliação cognitiva">
+<meta name="theme-color" content="#FFFFFF">
+
+<!-- ============ GOOGLE ADSENSE ============ -->
+<!-- Troque ca-pub-XXXXXXXXXXXXXXXX pelo seu ID de publisher -->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXXXX" crossorigin="anonymous"></script>
+<!-- =========================================== -->
+
+<style>
+  :root{
+    --primary:#17c964; --green:#17c964; --bg:#f4f6f9; --card:#ffffff;
+    --text:#0f1720; --muted:#6b7480; --line:#e3e7ee; --red:#f31260; --red-soft:#fee7ee;
+    --green-soft:#e8fbf0; --green-ink:#0d7a3f; --ink:#1e293b; --accent:#0ea5e9;
+    --input-bg:#f1f5f9; --hover-bg:#fafbfc; --hover-line:#b7c0cc;
+    --pix-bg:#f0fdf4; --pix-border:#86efac;
+    --ad-bg:#f8fafc; --ad-border:#e3e7ee; --ad-label:#94a3b8;
+    --shadow-sm:0 1px 2px rgba(15,23,32,.06);
+    --shadow-md:0 4px 16px rgba(15,23,32,.06),0 1px 3px rgba(15,23,32,.04);
+    --shadow-lg:0 12px 40px rgba(15,23,32,.10),0 2px 8px rgba(15,23,32,.05);
+    color-scheme:light;
+  }
+  [data-theme="dark"]{
+    --bg:#0a0e1a; --card:#141a2e;
+    --text:#eef5ff; --muted:#8ba3c7; --line:#2a3450; --red:#ff4d6d; --red-soft:rgba(255,77,109,.14);
+    --green-soft:rgba(23,201,100,.14); --green-ink:#4ee08a; --ink:#eef5ff; --accent:#4ee5ff;
+    --input-bg:#1a2036; --hover-bg:#1a2036; --hover-line:#4a5678;
+    --pix-bg:rgba(23,201,100,.08); --pix-border:rgba(78,224,138,.35);
+    --ad-bg:#0f1524; --ad-border:#2a3450; --ad-label:#5a678a;
+    --shadow-sm:0 1px 2px rgba(0,0,0,.35);
+    --shadow-md:0 4px 16px rgba(0,0,0,.4),0 1px 3px rgba(0,0,0,.3);
+    --shadow-lg:0 12px 40px rgba(0,0,0,.55),0 2px 8px rgba(0,0,0,.35);
+    color-scheme:dark;
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;padding:0;background:var(--bg);color:var(--text);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Inter,Helvetica,Arial,sans-serif;
+    -webkit-font-smoothing:antialiased;transition:background .3s,color .3s}
+  a{color:inherit}
+  .wrap{max-width:980px;margin:0 auto;padding:0 24px}
+  header{position:sticky;top:0;z-index:50;background:color-mix(in srgb, var(--bg) 88%, transparent);
+    -webkit-backdrop-filter:saturate(160%) blur(12px);backdrop-filter:saturate(160%) blur(12px);
+    border-bottom:1px solid var(--line)}
+  .header-inner{height:64px;display:flex;align-items:center;justify-content:space-between;gap:8px}
+  .logo{font-weight:800;font-size:19px;letter-spacing:-.4px;color:var(--ink);text-decoration:none;display:flex;align-items:center;gap:8px;flex-shrink:0}
+  .logo .mark{width:26px;height:26px;background:var(--green);border-radius:8px;display:grid;place-items:center;flex-shrink:0}
+  .logo .mark svg{width:16px;height:16px;display:block}
+  .logo .dot{color:var(--green)}
+  .header-right{display:flex;align-items:center;gap:8px;flex-wrap:nowrap}
+  .visits-chip{display:inline-flex;align-items:center;gap:6px;padding:6px 11px;border:1px solid var(--line);
+    border-radius:9px;background:var(--card);font-size:12.5px;font-weight:600;color:var(--text);
+    user-select:none;white-space:nowrap}
+  .visits-chip .ic{font-size:13px;line-height:1}
+  .visits-chip b{color:var(--green);font-variant-numeric:tabular-nums}
+  .visits-chip .sep{opacity:.3;margin:0 2px}
+  main{padding:40px 0 60px}
+  .card{background:var(--card);border-radius:18px;padding:36px;box-shadow:var(--shadow-md);border:1px solid var(--line);
+    transition:background .3s,border-color .3s}
+  h1{font-size:26px;text-align:center;font-weight:700;letter-spacing:-.4px;margin:0 0 8px;line-height:1.3}
+  .subtitle{text-align:center;color:var(--muted);font-size:15px;margin:0 0 28px;line-height:1.5}
+  h1 .hl{color:var(--green)}
+  ul.bullets{list-style:none;padding:0;margin:0 auto 28px;max-width:540px}
+  ul.bullets li{display:flex;gap:12px;align-items:flex-start;margin-bottom:12px;color:var(--text);font-size:15px;line-height:1.5;opacity:.85}
+  ul.bullets svg{flex-shrink:0;color:var(--green);margin-top:3px}
+  .cta-row{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-top:8px}
+  .btn{appearance:none;border:1px solid var(--green);background:var(--green);color:#fff;
+    font-family:inherit;font-size:15px;font-weight:600;padding:13px 26px;border-radius:12px;cursor:pointer;
+    min-width:150px;letter-spacing:-.1px;transition:transform .06s,opacity .15s,box-shadow .15s;
+    box-shadow:0 1px 2px rgba(23,201,100,.25),0 4px 12px rgba(23,201,100,.15)}
+  .btn:hover{opacity:.94;box-shadow:0 2px 4px rgba(23,201,100,.3),0 6px 18px rgba(23,201,100,.2)}
+  .btn:active{transform:translateY(1px)}
+  .btn:disabled{opacity:.45;cursor:not-allowed;box-shadow:none}
+  .btn.ghost{background:var(--card);color:var(--text);border-color:var(--line);box-shadow:var(--shadow-sm)}
+  .btn.ghost:hover{border-color:var(--hover-line);box-shadow:var(--shadow-md)}
+  .avg{text-align:center;color:var(--muted);font-size:13.5px;margin-top:18px;font-variant-numeric:tabular-nums}
+  .note{text-align:center;color:var(--muted);font-size:13px;margin-top:26px;line-height:1.55;padding-top:22px;border-top:1px solid var(--line)}
+  .q-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:14px;font-size:13.5px;color:var(--muted);font-weight:500}
+  .q-head .timer{font-weight:700;color:var(--text);font-variant-numeric:tabular-nums;
+    padding:4px 10px;border-radius:8px;background:var(--input-bg);transition:background .2s,color .2s}
+  .q-head .timer.warn{color:var(--red);background:var(--red-soft)}
+  .bar{height:6px;background:var(--input-bg);border-radius:99px;overflow:hidden;margin-bottom:6px}
+  .bar > i{display:block;height:100%;background:var(--green);width:0;transition:width .3s;border-radius:99px}
+  .tbar{height:4px;background:var(--input-bg);border-radius:99px;overflow:hidden;margin-bottom:28px}
+  .tbar > i{display:block;height:100%;background:var(--green);width:100%;transition:width .25s linear;border-radius:99px}
+  .tbar > i.warn{background:var(--red)}
+  .question{font-size:20px;font-weight:600;line-height:1.45;margin:0 0 24px;letter-spacing:-.2px}
+  .matrix{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;max-width:420px;margin:0 auto 24px}
+  .mcell{aspect-ratio:1;background:var(--input-bg);border:1.5px solid var(--line);border-radius:12px;
+    display:grid;place-items:center;padding:10px}
+  .mcell.missing{background:var(--card);border-style:dashed;border-color:var(--green)}
+  .mcell svg{width:100%;height:100%;display:block}
+  .options-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-bottom:8px}
+  .options-list{display:grid;gap:10px}
+  .opt{display:flex;align-items:center;gap:12px;padding:14px 16px;border:1.5px solid var(--line);
+    border-radius:12px;background:var(--card);cursor:pointer;font-size:15px;font-weight:500;
+    transition:border-color .15s,background .15s,transform .06s;user-select:none;position:relative}
+  .opt:hover{border-color:var(--hover-line);background:var(--hover-bg)}
+  .opt:active{transform:scale(.995)}
+  .opt.selected{border-color:var(--green);background:var(--green-soft);box-shadow:0 0 0 3px rgba(23,201,100,.12)}
+  .opt.correct{border-color:var(--green);background:var(--green-soft);box-shadow:0 0 0 3px rgba(23,201,100,.18)}
+  .opt.wrong{border-color:var(--red);background:var(--red-soft);box-shadow:0 0 0 3px rgba(243,18,96,.14)}
+  .opt.locked{cursor:default}
+  .opt.locked:hover{border-color:inherit;background:inherit}
+  .opt input{accent-color:var(--green);margin:0;position:absolute;opacity:0;pointer-events:none}
+  .opt-viz{padding:12px;display:grid;place-items:center;aspect-ratio:1;background:var(--card)}
+  .opt-viz.correct{background:var(--green-soft)}
+  .opt-viz.wrong{background:var(--red-soft)}
+  .opt-viz svg{width:100%;height:100%;display:block;max-width:80px}
+  .opt-badge{position:absolute;top:8px;right:10px;font-size:16px;font-weight:800}
+  .opt.correct .opt-badge,.opt-viz.correct .opt-badge{color:var(--green)}
+  .opt.wrong .opt-badge,.opt-viz.wrong .opt-badge{color:var(--red)}
+  .feedback{margin-top:14px;padding:14px 16px;border-radius:12px;font-size:14px;font-weight:600;
+    display:flex;align-items:center;gap:10px}
+  .feedback.ok{background:var(--green-soft);color:var(--green-ink);border:1px solid rgba(23,201,100,.3)}
+  .feedback.no{background:var(--red-soft);color:var(--red);border:1px solid rgba(243,18,96,.25)}
+  .feedback svg{flex-shrink:0}
+  .nav{display:flex;justify-content:space-between;margin-top:20px;gap:12px}
+  .result{text-align:center}
+  .score{font-size:96px;font-weight:800;color:var(--green);line-height:1;margin:8px 0 6px;letter-spacing:-3px;font-variant-numeric:tabular-nums}
+  .score-sub{color:var(--muted);margin-bottom:28px;font-size:15px}
+  .score-sub b{color:var(--ink);font-weight:700}
+  .stats{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:28px 0}
+  .stat{background:var(--input-bg);border:1px solid var(--line);border-radius:14px;padding:18px;text-align:center}
+  .stat b{display:block;font-size:24px;color:var(--text);font-weight:700;letter-spacing:-.5px;font-variant-numeric:tabular-nums}
+  .stat span{font-size:12.5px;color:var(--muted);text-transform:uppercase;letter-spacing:.5px;font-weight:500}
+  .certbox{margin-top:20px;padding:28px;border-radius:16px;text-align:center;
+    background:linear-gradient(135deg, rgba(23,201,100,.08), rgba(14,165,233,.06));
+    border:1.5px solid var(--green)}
+  .certbox h2{margin:0 0 8px;font-size:19px;font-weight:700;letter-spacing:-.2px}
+  .certbox p{color:var(--muted);font-size:14px;margin:0 0 20px;line-height:1.6}
+  .certbox .btn{min-width:200px;padding:15px 28px;font-size:15.5px}
+  .certbox .ic{font-size:52px;line-height:1;margin-bottom:12px;display:block;
+    filter:drop-shadow(0 4px 14px rgba(23,201,100,.4))}
+  .lang-switch{position:relative;display:inline-flex;align-items:center;gap:6px;
+    padding:6px 10px;border:1px solid var(--line);border-radius:9px;background:var(--card);
+    cursor:pointer;font-size:13px;font-weight:500;user-select:none;font-family:inherit;color:var(--text)}
+  .lang-switch .flag{width:20px;height:14px;border-radius:2px;flex-shrink:0;display:block}
+  .lang-switch .flag svg{width:100%;height:100%;display:block}
+  .lang-switch .chev{transition:transform .2s;opacity:.55}
+  .lang-switch[data-open="true"] .chev{transform:rotate(180deg)}
+  .lang-menu{position:absolute;top:calc(100% + 6px);right:0;min-width:230px;max-height:400px;
+    overflow-y:auto;background:var(--card);border:1px solid var(--line);border-radius:12px;
+    box-shadow:var(--shadow-lg);padding:6px;z-index:9999}
+  .lang-menu button{display:flex;align-items:center;gap:10px;width:100%;padding:9px 11px;
+    border:0;background:transparent;border-radius:8px;font-family:inherit;font-size:13.5px;text-align:left;cursor:pointer;color:var(--text)}
+  .lang-menu button:hover{background:var(--input-bg)}
+  .lang-menu button[data-active="true"]{background:var(--green-soft);color:var(--green-ink);font-weight:600}
+  .lang-menu .flag{width:22px;height:16px;border-radius:2px;flex-shrink:0;display:block}
+  .lang-menu .flag svg{width:100%;height:100%;display:block}
+  .theme-btn{width:38px;height:38px;padding:0;border:1px solid var(--line);border-radius:9px;
+    background:var(--card);cursor:pointer;display:grid;place-items:center;color:var(--text);
+    font-size:17px;transition:border-color .15s,transform .1s}
+  .theme-btn:hover{border-color:var(--hover-line)}
+  .theme-btn:active{transform:scale(.94)}
+  @keyframes rgb-shift{0%{background-position:0% 50%}50%{background-position:100% 50%}100%{background-position:0% 50%}}
+  .domwebsite-rgb{
+    background:linear-gradient(90deg,#ff004c,#ff8a00,#ffe600,#22ff5c,#00e5ff,#4a5cff,#c400ff,#ff004c);
+    background-size:400% 400%;animation:rgb-shift 6s linear infinite;
+    -webkit-background-clip:text;background-clip:text;color:transparent;font-weight:700;letter-spacing:.3px;text-decoration:none}
+  footer{border-top:1px solid var(--line);background:var(--card);padding:26px 20px;
+    font-size:13.5px;color:var(--muted);transition:background .3s,border-color .3s}
+  .footer-inner{max-width:980px;margin:0 auto;display:flex;flex-direction:column;gap:14px;align-items:center}
+  .donation-box{width:100%;max-width:640px;padding:18px 20px;border-radius:14px;
+    background:var(--pix-bg);border:1.5px dashed var(--pix-border);
+    text-align:center;line-height:1.55;font-size:13.5px;color:var(--text)}
+  .donation-box .heart{font-size:22px;line-height:1;display:block;margin-bottom:8px}
+  .donation-box p{margin:0 0 12px;color:var(--muted)}
+  .donation-box p b{color:var(--text);font-weight:700}
+  .pix-inline{display:flex;gap:8px;align-items:center;justify-content:center;flex-wrap:wrap;max-width:420px;margin:0 auto}
+  .pix-inline code{flex:1;min-width:170px;font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,monospace;
+    font-size:13.5px;background:var(--card);padding:10px 12px;border-radius:8px;border:1px solid var(--line);color:var(--text);
+    letter-spacing:.02em;overflow:auto;text-align:center;font-weight:600}
+  .pix-inline button{appearance:none;border:1px solid var(--green);background:var(--green);color:#fff;
+    font-family:inherit;font-size:13px;font-weight:600;padding:10px 16px;border-radius:8px;cursor:pointer;
+    transition:opacity .15s,transform .06s;min-width:100px}
+  .pix-inline button:hover{opacity:.92}
+  .pix-inline button:active{transform:translateY(1px)}
+  .credit{font-size:13px;color:var(--muted);text-align:center}
+  .cat{display:inline-block;font-size:11px;font-weight:600;letter-spacing:.6px;
+    text-transform:uppercase;color:var(--accent);background:rgba(14,165,233,.12);
+    padding:4px 10px;border-radius:6px;margin-bottom:12px}
+  .boot-error{text-align:center;padding:40px 20px}
+  .progress-dots{display:flex;gap:4px;justify-content:center;margin-bottom:16px;flex-wrap:wrap}
+  .pdot{width:8px;height:8px;border-radius:99px;background:var(--line)}
+  .pdot.done-ok{background:var(--green)}
+  .pdot.done-no{background:var(--red)}
+  .pdot.current{background:var(--ink);transform:scale(1.3)}
+
+  /* ========== ADSENSE SLOTS ========== */
+  .ad-slot{
+    margin:20px 0;
+    padding:8px;
+    background:var(--ad-bg);
+    border:1px dashed var(--ad-border);
+    border-radius:12px;
+    text-align:center;
+    min-height:70px;
+    position:relative;
+    overflow:hidden;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+  }
+  .ad-slot::before{
+    content:'PUBLICIDADE';
+    position:absolute;
+    top:6px;left:12px;
+    font-size:9px;
+    letter-spacing:.14em;
+    color:var(--ad-label);
+    font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,monospace;
+    font-weight:600;
+  }
+  .ad-slot ins{display:block;width:100%;min-height:60px}
+  .ad-slot.tall{min-height:250px}
+  .ad-slot.tall ins{min-height:240px}
+
+  /* ad lateral fixa (desktop) */
+  .ad-side{
+    position:fixed;
+    top:120px;
+    right:20px;
+    width:160px;
+    min-height:600px;
+    z-index:40;
+    display:none;
+  }
+  @media(min-width:1400px){
+    .ad-side{display:block}
+  }
+
+  @media(max-width:640px){
+    .card{padding:24px}
+    .score{font-size:72px}
+    .matrix{max-width:320px}
+    .options-grid{gap:8px}
+    .header-inner{height:auto;padding:12px 0;flex-wrap:wrap}
+    .wrap{padding:0 16px}
+    .visits-chip{font-size:11.5px;padding:5px 9px}
+    .visits-chip .full{display:none}
+    .footer-inner{padding:0 4px}
+    .logo{font-size:16px}
+    .ad-slot{margin:14px 0}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap header-inner">
+    <a href="#" class="logo">
+      <span class="mark"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9.5 2A2.5 2.5 0 0 1 12 4.5v15a2.5 2.5 0 0 1-4.96.44 2.5 2.5 0 0 1-2.96-3.08 3 3 0 0 1-.34-5.58 2.5 2.5 0 0 1 1.32-4.24 2.5 2.5 0 0 1 1.98-3A2.5 2.5 0 0 1 9.5 2Z"/><path d="M14.5 2A2.5 2.5 0 0 0 12 4.5v15a2.5 2.5 0 0 0 4.96.44 2.5 2.5 0 0 0 2.96-3.08 3 3 0 0 0 .34-5.58 2.5 2.5 0 0 0-1.32-4.24 2.5 2.5 0 0 0-1.98-3A2.5 2.5 0 0 0 14.5 2Z"/></svg></span>
+      Teste de <span class="dot">QI</span>
+    </a>
+    <div class="header-right">
+      <div class="visits-chip" id="visitsChip" title="Visitas ao site">
+        <span class="ic">👁️</span>
+        <span class="full">Visitas:</span>
+        <b id="visitsToday">0</b>
+        <span class="sep">·</span>
+        <span class="full">total</span>
+        <b id="visitsTotal">0</b>
+      </div>
+      <div id="lang-slot"></div>
+      <button class="theme-btn" id="themeBtn" aria-label="Alternar tema" title="Modo claro / escuro">🌙</button>
+    </div>
+  </div>
+</header>
+
+<!-- AD LATERAL (desktop >1400px) -->
+<aside class="ad-side" aria-hidden="true">
+  <div class="ad-slot tall" style="margin:0;height:600px">
+    <ins class="adsbygoogle"
+         style="display:block;width:160px;height:600px"
+         data-ad-client="ca-pub-XXXXXXXXXXXXXXXX"
+         data-ad-slot="5555555555"
+         data-ad-format="vertical"></ins>
+  </div>
+</aside>
+
+<main>
+  <div class="wrap">
+
+    <!-- AD TOPO (acima do teste) -->
+    <div class="ad-slot">
+      <ins class="adsbygoogle"
+           style="display:block"
+           data-ad-client="ca-pub-XXXXXXXXXXXXXXXX"
+           data-ad-slot="1111111111"
+           data-ad-format="auto"
+           data-full-width-responsive="true"></ins>
+    </div>
+
+    <div id="app"></div>
+
+    <!-- AD FIM DO TESTE (abaixo do resultado) -->
+    <div class="ad-slot" id="adSlotBottom" style="display:none">
+      <ins class="adsbygoogle"
+           style="display:block"
+           data-ad-client="ca-pub-XXXXXXXXXXXXXXXX"
+           data-ad-slot="2222222222"
+           data-ad-format="auto"
+           data-full-width-responsive="true"></ins>
+    </div>
+
+  </div>
+</main>
+
+<footer>
+  <div class="footer-inner">
+    <div class="donation-box" id="donationBox">
+      <span class="heart">💚</span>
+      <p id="donationText">Se você gostou do nosso trabalho e querer fazer uma doação ao desenvolvedor do site, envie qualquer valor para o Pix abaixo:</p>
+      <div class="pix-inline">
+        <code id="pixKeyFooter">46 99121-9785</code>
+        <button type="button" id="btnCopyPixFooter">Copiar Pix</button>
+      </div>
+    </div>
+    <div class="credit">
+      <span id="creditPrefix">Desenvolvido por</span>
+      <a class="domwebsite-rgb" href="https://julianoodom12-creator.github.io/domwebsite-loja-virtual/" target="_blank" rel="noopener">DomWebsite</a>
+    </div>
+  </div>
+</footer>
+
+<!-- AD RODAPÉ (abaixo do rodapé) -->
+<div class="wrap" style="padding:0 24px 30px">
+  <div class="ad-slot">
+    <ins class="adsbygoogle"
+         style="display:block"
+         data-ad-client="ca-pub-XXXXXXXXXXXXXXXX"
+         data-ad-slot="3333333333"
+         data-ad-format="auto"
+         data-full-width-responsive="true"></ins>
+  </div>
+</div>
+
+<script>
+/* ============== CONFIG ============== */
+var QUIZ_SIZE=15;
+var SECONDS_PER_Q=60;
+var PIX_KEY_FOOTER="46 99121-9785";
+
+/* ============== TEMA ============== */
+function getTheme(){
+  try{var t=localStorage.getItem("theme");if(t==="dark"||t==="light") return t;}catch(e){}
+  return (window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches) ? "dark" : "light";
+}
+function setTheme(t){
+  document.documentElement.setAttribute("data-theme", t);
+  try{localStorage.setItem("theme", t);}catch(e){}
+  var btn=document.getElementById("themeBtn");
+  if(btn) btn.textContent=(t==="dark")?"☀️":"🌙";
+  var meta=document.querySelector('meta[name="theme-color"]');
+  if(meta) meta.setAttribute("content", t==="dark" ? "#0a0e1a" : "#FFFFFF");
+}
+function toggleTheme(){
+  var cur=document.documentElement.getAttribute("data-theme")||"light";
+  setTheme(cur==="dark" ? "light" : "dark");
+}
+
+/* ============== CONTADOR DE VISITAS ============== */
+var VISITS_KEY="qi_visits_v1";
+function todayKey(){var d=new Date();return d.getFullYear()+"-"+(d.getMonth()+1)+"-"+d.getDate();}
+function registerVisit(){
+  var total=0,today=0,stored={};
+  try{var raw=localStorage.getItem(VISITS_KEY);if(raw) stored=JSON.parse(raw);}catch(e){}
+  total=parseInt(stored.total||0,10);
+  today=parseInt(stored.today||0,10);
+  var storedDay=stored.day||"";
+  var nowDay=todayKey();
+  if(storedDay!==nowDay){today=0;storedDay=nowDay;}
+  var alreadyThisSession=false;
+  try{alreadyThisSession=sessionStorage.getItem("qi_session_counted")==="1";}catch(e){}
+  if(!alreadyThisSession){
+    total++;today++;
+    try{sessionStorage.setItem("qi_session_counted","1");}catch(e){}
+  }
+  try{localStorage.setItem(VISITS_KEY,JSON.stringify({total:total,today:today,day:storedDay}));}catch(e){}
+  return {total:total,today:today};
+}
+function renderVisits(){
+  var v=registerVisit();
+  var elT=document.getElementById("visitsTotal");
+  var elD=document.getElementById("visitsToday");
+  var loc = getLang();
+  if(elT) elT.textContent=v.total.toLocaleString(loc);
+  if(elD) elD.textContent=v.today.toLocaleString(loc);
+}
+
+/* ============== FLAGS SVG (20 idiomas) ============== */
+var FLAGS={
+  br:'<svg viewBox="0 0 30 21"><rect width="30" height="21" fill="#009b3a"/><polygon points="15,2 28,10.5 15,19 2,10.5" fill="#fedf00"/><circle cx="15" cy="10.5" r="4.2" fill="#002776"/></svg>',
+  us:'<svg viewBox="0 0 30 21"><rect width="30" height="21" fill="#fff"/><g fill="#b22234"><rect width="30" height="1.6"/><rect y="3.2" width="30" height="1.6"/><rect y="6.4" width="30" height="1.6"/><rect y="9.6" width="30" height="1.6"/><rect y="12.8" width="30" height="1.6"/><rect y="16" width="30" height="1.6"/><rect y="19.2" width="30" height="1.6"/></g><rect width="12" height="11.2" fill="#3c3b6e"/></svg>',
+  es:'<svg viewBox="0 0 30 21"><rect width="30" height="21" fill="#aa151b"/><rect y="5.25" width="30" height="10.5" fill="#f1bf00"/></svg>',
+  fr:'<svg viewBox="0 0 30 21"><rect width="10" height="21" fill="#002395"/><rect x="10" width="10" height="21" fill="#fff"/><rect x="20" width="10" height="21" fill="#ed2939"/></svg>',
+  de:'<svg viewBox="0 0 30 21"><rect width="30" height="7"/><rect y="7" width="30" height="7" fill="#dd0000"/><rect y="14" width="30" height="7" fill="#ffce00"/></svg>',
+  it:'<svg viewBox="0 0 30 21"><rect width="10" height="21" fill="#009246"/><rect x="10" width="10" height="21" fill="#fff"/><rect x="20" width="10" height="21" fill="#ce2b37"/></svg>',
+  jp:'<svg viewBox="0 0 30 21"><rect width="30" height="21" fill="#fff"/><circle cx="15" cy="10.5" r="5.5" fill="#bc002d"/></svg>',
+  cn:'<svg viewBox="0 0 30 21"><rect width="30" height="21" fill="#de2910"/><polygon points="5,3 5.9,5.8 8.8,5.8 6.4,7.5 7.3,10.3 5,8.6 2.7,10.3 3.6,7.5 1.2,5.8 4.1,5.8" fill="#ffde00"/></svg>',
+  ru:'<svg viewBox="0 0 30 21"><rect width="30" height="7" fill="#fff"/><rect y="7" width="30" height="7" fill="#0039a6"/><rect y="14" width="30" height="7" fill="#d52b1e"/></svg>',
+  sa:'<svg viewBox="0 0 30 21"><rect width="30" height="21" fill="#006c35"/><path d="M6 12c3 1 6 1 9 0" stroke="#fff" stroke-width="1" fill="none"/></svg>',
+  in:'<svg viewBox="0 0 30 21"><rect width="30" height="7" fill="#ff9933"/><rect y="7" width="30" height="7" fill="#fff"/><rect y="14" width="30" height="7" fill="#138808"/><circle cx="15" cy="10.5" r="2.6" fill="none" stroke="#000080" stroke-width="0.7"/></svg>',
+  kr:'<svg viewBox="0 0 30 21"><rect width="30" height="21" fill="#fff"/><circle cx="15" cy="10.5" r="4" fill="#cd2e3a"/><path d="M11 10.5 A4 4 0 0 1 19 10.5 A2 2 0 0 0 15 10.5 A2 2 0 0 1 11 10.5 Z" fill="#0047a0"/></svg>',
+  tr:'<svg viewBox="0 0 30 21"><rect width="30" height="21" fill="#e30a17"/><circle cx="11" cy="10.5" r="4.5" fill="#fff"/><circle cx="12.5" cy="10.5" r="3.6" fill="#e30a17"/><polygon points="17,10.5 20,9.3 20,11.7" fill="#fff"/></svg>',
+  nl:'<svg viewBox="0 0 30 21"><rect width="30" height="7" fill="#ae1c28"/><rect y="7" width="30" height="7" fill="#fff"/><rect y="14" width="30" height="7" fill="#21468b"/></svg>',
+  pl:'<svg viewBox="0 0 30 21"><rect width="30" height="10.5" fill="#fff"/><rect y="10.5" width="30" height="10.5" fill="#dc143c"/></svg>',
+  se:'<svg viewBox="0 0 30 21"><rect width="30" height="21" fill="#006aa7"/><rect x="9" width="5" height="21" fill="#fecc00"/><rect y="8" width="30" height="5" fill="#fecc00"/></svg>',
+  id:'<svg viewBox="0 0 30 21"><rect width="30" height="10.5" fill="#ce1126"/><rect y="10.5" width="30" height="10.5" fill="#fff"/></svg>',
+  vn:'<svg viewBox="0 0 30 21"><rect width="30" height="21" fill="#da251d"/><polygon points="15,5 16,9 20,9 17,11.5 18,15.5 15,13 12,15.5 13,11.5 10,9 14,9" fill="#ff0"/></svg>',
+  th:'<svg viewBox="0 0 30 21"><rect width="30" height="21" fill="#a51931"/><rect y="3.5" width="30" height="14" fill="#f4f5f8"/><rect y="7" width="30" height="7" fill="#2d2a4a"/></svg>',
+  gr:'<svg viewBox="0 0 30 21"><rect width="30" height="21" fill="#fff"/><g fill="#0d5eaf"><rect width="30" height="2.33"/><rect y="4.66" width="30" height="2.33"/><rect y="9.33" width="30" height="2.33"/><rect y="14" width="30" height="2.33"/><rect y="18.66" width="30" height="2.33"/><rect width="11" height="11.66"/></g><rect x="4.4" width="2.2" height="11.66" fill="#fff"/><rect y="4.7" width="11" height="2.2" fill="#fff"/></svg>'
+};
+
+/* ============== LANGS (20 idiomas) ============== */
+var LANGS=[
+  {code:"pt-BR",label:"Português (Brasil)",flag:"br"},
+  {code:"en",label:"English",flag:"us"},
+  {code:"es",label:"Español",flag:"es"},
+  {code:"fr",label:"Français",flag:"fr"},
+  {code:"de",label:"Deutsch",flag:"de"},
+  {code:"it",label:"Italiano",flag:"it"},
+  {code:"ja",label:"日本語",flag:"jp"},
+  {code:"zh-CN",label:"中文 (简体)",flag:"cn"},
+  {code:"ru",label:"Русский",flag:"ru"},
+  {code:"ar",label:"العربية",flag:"sa"},
+  {code:"hi",label:"हिन्दी",flag:"in"},
+  {code:"ko",label:"한국어",flag:"kr"},
+  {code:"tr",label:"Türkçe",flag:"tr"},
+  {code:"nl",label:"Nederlands",flag:"nl"},
+  {code:"pl",label:"Polski",flag:"pl"},
+  {code:"sv",label:"Svenska",flag:"se"},
+  {code:"id",label:"Bahasa Indonesia",flag:"id"},
+  {code:"vi",label:"Tiếng Việt",flag:"vn"},
+  {code:"th",label:"ไทย",flag:"th"},
+  {code:"el",label:"Ελληνικά",flag:"gr"}
+];
+
+/* ============== I18N (20 idiomas) ============== */
+var I18N={
+  "pt-BR":{
+    startTitle:'Teste de QI <span class="hl">profissional</span>',
+    subtitle:"15 questões de um banco com 30 de figuras visuais + 30 de conhecimento geral.",
+    b1:"30 questões de matrizes e sequências visuais (Raven-like)",
+    b2:"30 questões de conhecimento geral, vocabulário, lógica e matemática",
+    b3:"Feedback imediato — se errar, a correta aparece em verde",
+    start:"Iniciar avaliação",
+    avg:"Pontuação média de QI hoje: 128",
+    freeNote:"Certificado em PDF 100% gratuito. Sem cadastro, sem pagamento, sem assinatura.",
+    q:"Questão",of:"de",next:"Próxima",back:"Voltar",finish:"Ver meu resultado",
+    youGotIt:"Você acertou!",
+    youMissed:"Você errou. A correta está destacada em verde.",
+    yourIQ:"Sua pontuação de QI",classLabel:"Classificação",
+    correct:"Acertos",time:"Tempo",percentile:"Percentil",
+    certTitle2:"Seu certificado está pronto!",
+    certSub2:"Clique no botão abaixo para gerar o PDF personalizado com seu nome e sua pontuação. É grátis.",
+    download:"Baixar certificado em PDF",retake:"Refazer a avaliação",
+    certTitle:"CERTIFICADO DE QI",certSub:"Avaliação Cognitiva Online",
+    certScore:"Pontuação de QI",certLevel:"Classificação",
+    certDate:"Data",certId:"ID do certificado",
+    certIssued:"Emitido por Teste de QI • desenvolvido por DomWebsite",
+    namePrompt:"Digite seu nome para o certificado:",
+    catVisual:"Raciocínio Visual",catLogical:"Raciocínio Lógico",
+    catNumeric:"Raciocínio Numérico",catVerbal:"Raciocínio Verbal",
+    catSpatial:"Raciocínio Espacial",catKnowledge:"Conhecimento Geral",
+    catVocabulary:"Vocabulário",
+    levels:{low:"Baixo",below:"Abaixo da Média",avg:"Média",above:"Acima da Média",smart:"Inteligente",high:"Altamente Inteligente"},
+    visitsChipTitle:"Visitas ao site",
+    donationText:"Se você gostou do nosso trabalho e querer fazer uma doação ao desenvolvedor do site, envie qualquer valor para o Pix abaixo:",
+    copyPix:"Copiar Pix",copied:"Copiado!",creditPrefix:"Desenvolvido por"
+  },
+  "en":{
+    startTitle:'<span class="hl">Professional</span> IQ Test',
+    subtitle:"15 questions from a bank of 30 visual figures + 30 general knowledge questions.",
+    b1:"30 visual matrix and sequence questions (Raven-like)",
+    b2:"30 general knowledge, vocabulary, logic and math questions",
+    b3:"Instant feedback — if wrong, the correct one is highlighted in green",
+    start:"Start assessment",avg:"Average IQ score today: 128",
+    freeNote:"PDF certificate 100% free. No sign-up, no payment, no subscription.",
+    q:"Question",of:"of",next:"Next",back:"Back",finish:"See my result",
+    youGotIt:"You got it right!",youMissed:"You missed it. The correct one is highlighted in green.",
+    yourIQ:"Your IQ score",classLabel:"Classification",correct:"Correct",time:"Time",percentile:"Percentile",
+    certTitle2:"Your certificate is ready!",
+    certSub2:"Click the button below to generate the personalized PDF with your name and score. It's free.",
+    download:"Download PDF certificate",retake:"Retake the assessment",
+    certTitle:"IQ CERTIFICATE",certSub:"Online Cognitive Assessment",
+    certScore:"IQ Score",certLevel:"Classification",certDate:"Date",certId:"Certificate ID",
+    certIssued:"Issued by IQ Test • developed by DomWebsite",
+    namePrompt:"Enter your name for the certificate:",
+    catVisual:"Visual Reasoning",catLogical:"Logical Reasoning",catNumeric:"Numerical Reasoning",
+    catVerbal:"Verbal Reasoning",catSpatial:"Spatial Reasoning",catKnowledge:"General Knowledge",catVocabulary:"Vocabulary",
+    levels:{low:"Low",below:"Below Average",avg:"Average",above:"Above Average",smart:"Intelligent",high:"Highly Intelligent"},
+    visitsChipTitle:"Site visits",
+    donationText:"If you liked our work and want to donate to the site developer, send any amount to the Pix key below:",
+    copyPix:"Copy Pix",copied:"Copied!",creditPrefix:"Developed by"
+  },
+  "es":{
+    startTitle:'Test de CI <span class="hl">profesional</span>',
+    subtitle:"15 preguntas de un banco de 30 figuras visuales + 30 de conocimiento general.",
+    b1:"30 preguntas de matrices y secuencias visuales (tipo Raven)",
+    b2:"30 preguntas de conocimiento general, vocabulario, lógica y matemática",
+    b3:"Feedback inmediato — si falla, la correcta aparece en verde",
+    start:"Iniciar evaluación",avg:"Puntuación media de CI hoy: 128",
+    freeNote:"Certificado en PDF 100% gratuito. Sin registro, sin pago, sin suscripción.",
+    q:"Pregunta",of:"de",next:"Siguiente",back:"Atrás",finish:"Ver mi resultado",
+    youGotIt:"¡Acertaste!",youMissed:"Fallaste. La correcta está en verde.",
+    yourIQ:"Tu puntuación de CI",classLabel:"Clasificación",correct:"Aciertos",time:"Tiempo",percentile:"Percentil",
+    certTitle2:"¡Tu certificado está listo!",
+    certSub2:"Haz clic en el botón para generar el PDF personalizado con tu nombre y puntuación. Es gratis.",
+    download:"Descargar certificado PDF",retake:"Repetir la evaluación",
+    certTitle:"CERTIFICADO DE CI",certSub:"Evaluación Cognitiva Online",
+    certScore:"Puntuación de CI",certLevel:"Clasificación",certDate:"Fecha",certId:"ID del certificado",
+    certIssued:"Emitido por Test de CI • desarrollado por DomWebsite",
+    namePrompt:"Escribe tu nombre para el certificado:",
+    catVisual:"Razonamiento Visual",catLogical:"Razonamiento Lógico",catNumeric:"Razonamiento Numérico",
+    catVerbal:"Razonamiento Verbal",catSpatial:"Razonamiento Espacial",catKnowledge:"Conocimiento General",catVocabulary:"Vocabulario",
+    levels:{low:"Bajo",below:"Por debajo del promedio",avg:"Promedio",above:"Por encima del promedio",smart:"Inteligente",high:"Altamente Inteligente"},
+    visitsChipTitle:"Visitas al sitio",
+    donationText:"Si te gustó nuestro trabajo y quieres hacer una donación al desarrollador del sitio, envía cualquier cantidad a la clave Pix abajo:",
+    copyPix:"Copiar Pix",copied:"¡Copiado!",creditPrefix:"Desarrollado por"
+  },
+  "fr":{
+    startTitle:'Test de QI <span class="hl">professionnel</span>',
+    subtitle:"15 questions d'une banque de 30 figures visuelles + 30 de culture générale.",
+    b1:"30 questions de matrices et séquences visuelles (type Raven)",
+    b2:"30 questions de culture générale, vocabulaire, logique et maths",
+    b3:"Retour immédiat — en cas d'erreur, la bonne réponse apparaît en vert",
+    start:"Commencer l'évaluation",avg:"Score de QI moyen aujourd'hui : 128",
+    freeNote:"Certificat PDF 100% gratuit. Sans inscription, sans paiement, sans abonnement.",
+    q:"Question",of:"sur",next:"Suivant",back:"Retour",finish:"Voir mon résultat",
+    youGotIt:"Bravo, c'est juste !",youMissed:"Raté. La bonne réponse est en vert.",
+    yourIQ:"Votre score de QI",classLabel:"Classification",correct:"Bonnes réponses",time:"Temps",percentile:"Centile",
+    certTitle2:"Votre certificat est prêt !",
+    certSub2:"Cliquez ci-dessous pour générer le PDF personnalisé avec votre nom et votre score. C'est gratuit.",
+    download:"Télécharger le certificat PDF",retake:"Refaire l'évaluation",
+    certTitle:"CERTIFICAT DE QI",certSub:"Évaluation Cognitive en Ligne",
+    certScore:"Score de QI",certLevel:"Classification",certDate:"Date",certId:"ID du certificat",
+    certIssued:"Émis par Test de QI • développé par DomWebsite",
+    namePrompt:"Entrez votre nom pour le certificat :",
+    catVisual:"Raisonnement Visuel",catLogical:"Raisonnement Logique",catNumeric:"Raisonnement Numérique",
+    catVerbal:"Raisonnement Verbal",catSpatial:"Raisonnement Spatial",catKnowledge:"Culture Générale",catVocabulary:"Vocabulaire",
+    levels:{low:"Faible",below:"Sous la moyenne",avg:"Moyenne",above:"Au-dessus de la moyenne",smart:"Intelligent",high:"Hautement intelligent"},
+    visitsChipTitle:"Visites du site",
+    donationText:"Si vous avez aimé notre travail et souhaitez faire un don au développeur du site, envoyez n'importe quel montant à la clé Pix ci-dessous :",
+    copyPix:"Copier Pix",copied:"Copié !",creditPrefix:"Développé par"
+  },
+  "de":{
+    startTitle:'<span class="hl">Professioneller</span> IQ-Test',
+    subtitle:"15 Fragen aus einer Bank von 30 visuellen Figuren + 30 Allgemeinwissen.",
+    b1:"30 visuelle Matrix- und Sequenzfragen (Raven-ähnlich)",
+    b2:"30 Fragen zu Allgemeinwissen, Wortschatz, Logik und Mathematik",
+    b3:"Sofortiges Feedback — bei Fehler erscheint die richtige grün",
+    start:"Bewertung starten",avg:"Durchschnittlicher IQ heute: 128",
+    freeNote:"PDF-Zertifikat 100% kostenlos. Keine Anmeldung, keine Zahlung, kein Abo.",
+    q:"Frage",of:"von",next:"Weiter",back:"Zurück",finish:"Ergebnis ansehen",
+    youGotIt:"Richtig!",youMissed:"Falsch. Die richtige ist grün markiert.",
+    yourIQ:"Ihr IQ-Ergebnis",classLabel:"Einstufung",correct:"Richtig",time:"Zeit",percentile:"Perzentil",
+    certTitle2:"Ihr Zertifikat ist fertig!",
+    certSub2:"Klicken Sie unten, um das personalisierte PDF mit Name und Punktzahl zu erstellen. Kostenlos.",
+    download:"PDF-Zertifikat herunterladen",retake:"Wiederholen",
+    certTitle:"IQ-ZERTIFIKAT",certSub:"Online-Kognitive Bewertung",
+    certScore:"IQ-Wert",certLevel:"Einstufung",certDate:"Datum",certId:"Zertifikats-ID",
+    certIssued:"Ausgestellt von IQ-Test • entwickelt von DomWebsite",
+    namePrompt:"Geben Sie Ihren Namen ein:",
+    catVisual:"Visuelles Denken",catLogical:"Logisches Denken",catNumeric:"Numerisches Denken",
+    catVerbal:"Verbales Denken",catSpatial:"Räumliches Denken",catKnowledge:"Allgemeinwissen",catVocabulary:"Wortschatz",
+    levels:{low:"Niedrig",below:"Unterdurchschnittlich",avg:"Durchschnitt",above:"Überdurchschnittlich",smart:"Intelligent",high:"Hochbegabt"},
+    visitsChipTitle:"Seitenaufrufe",
+    donationText:"Wenn Ihnen unsere Arbeit gefällt und Sie an den Entwickler der Seite spenden möchten, senden Sie einen beliebigen Betrag an den Pix-Schlüssel unten:",
+    copyPix:"Pix kopieren",copied:"Kopiert!",creditPrefix:"Entwickelt von"
+  },
+  "it":{
+    startTitle:'Test del QI <span class="hl">professionale</span>',
+    subtitle:"15 domande da un archivio di 30 figure visive + 30 di cultura generale.",
+    b1:"30 domande di matrici e sequenze visive (tipo Raven)",
+    b2:"30 domande di cultura generale, vocabolario, logica e matematica",
+    b3:"Feedback immediato — se sbagli, la corretta è in verde",
+    start:"Inizia la valutazione",avg:"Punteggio QI medio oggi: 128",
+    freeNote:"Certificato PDF 100% gratuito. Senza registrazione, senza pagamento, senza abbonamento.",
+    q:"Domanda",of:"di",next:"Avanti",back:"Indietro",finish:"Vedi risultato",
+    youGotIt:"Hai indovinato!",youMissed:"Sbagliato. La corretta è in verde.",
+    yourIQ:"Il tuo punteggio QI",classLabel:"Classificazione",correct:"Corrette",time:"Tempo",percentile:"Percentile",
+    certTitle2:"Il tuo certificato è pronto!",
+    certSub2:"Clicca il pulsante per generare il PDF personalizzato con nome e punteggio. È gratis.",
+    download:"Scarica certificato PDF",retake:"Rifai",
+    certTitle:"CERTIFICATO QI",certSub:"Valutazione Cognitiva Online",
+    certScore:"Punteggio QI",certLevel:"Classificazione",certDate:"Data",certId:"ID certificato",
+    certIssued:"Emesso da Test QI • sviluppato da DomWebsite",
+    namePrompt:"Inserisci il tuo nome:",
+    catVisual:"Ragionamento Visivo",catLogical:"Ragionamento Logico",catNumeric:"Ragionamento Numerico",
+    catVerbal:"Ragionamento Verbale",catSpatial:"Ragionamento Spaziale",catKnowledge:"Cultura Generale",catVocabulary:"Vocabolario",
+    levels:{low:"Basso",below:"Sotto la media",avg:"Media",above:"Sopra la media",smart:"Intelligente",high:"Altamente intelligente"},
+    visitsChipTitle:"Visite al sito",
+    donationText:"Se ti è piaciuto il nostro lavoro e vuoi fare una donazione allo sviluppatore del sito, invia qualsiasi importo alla chiave Pix qui sotto:",
+    copyPix:"Copia Pix",copied:"Copiato!",creditPrefix:"Sviluppato da"
+  },
+  "ja":{
+    startTitle:'<span class="hl">本格</span>IQテスト',
+    subtitle:"視覚図形30問＋一般知識30問の問題バンクから15問出題。",
+    b1:"視覚マトリックス・系列問題30問（Raven風）",
+    b2:"一般知識・語彙・論理・数学30問",
+    b3:"即時フィードバック — 間違えると正解が緑で表示",
+    start:"評価を開始",avg:"本日の平均IQ：128",
+    freeNote:"PDF認定証は完全無料。登録不要、支払い不要、サブスクなし。",
+    q:"質問",of:"/",next:"次へ",back:"戻る",finish:"結果を見る",
+    youGotIt:"正解です！",youMissed:"不正解。正解は緑で表示。",
+    yourIQ:"あなたのIQスコア",classLabel:"分類",correct:"正解",time:"時間",percentile:"パーセンタイル",
+    certTitle2:"認定証の準備ができました！",
+    certSub2:"ボタンをクリックすると、名前とスコア入りのPDFが生成されます。無料です。",
+    download:"PDF認定証をダウンロード",retake:"もう一度",
+    certTitle:"IQ認定証",certSub:"オンライン認知評価",
+    certScore:"IQスコア",certLevel:"分類",certDate:"日付",certId:"ID",
+    certIssued:"IQテスト発行 • DomWebsite 制作",
+    namePrompt:"お名前：",
+    catVisual:"視覚的推論",catLogical:"論理的推論",catNumeric:"数的推論",
+    catVerbal:"言語的推論",catSpatial:"空間的推論",catKnowledge:"一般知識",catVocabulary:"語彙",
+    levels:{low:"低い",below:"平均以下",avg:"平均",above:"平均以上",smart:"知的",high:"非常に知的"},
+    visitsChipTitle:"サイト訪問数",
+    donationText:"私たちの仕事を気に入って、サイト開発者に寄付したい場合は、下のPixキーに任意の金額をお送りください：",
+    copyPix:"Pixをコピー",copied:"コピーしました！",creditPrefix:"開発："
+  },
+  "zh-CN":{
+    startTitle:'<span class="hl">专业</span>智商测试',
+    subtitle:"从 30 道图形题 + 30 道常识题中抽取 15 道。",
+    b1:"30 道视觉矩阵与序列题（类 Raven）",
+    b2:"30 道常识、词汇、逻辑与数学题",
+    b3:"立即反馈 — 答错时正确答案以绿色高亮",
+    start:"开始评估",avg:"今日平均智商：128",
+    freeNote:"PDF 证书 100% 免费。无需注册、无需付款、无需订阅。",
+    q:"第",of:"题，共",next:"下一题",back:"返回",finish:"查看结果",
+    youGotIt:"答对了！",youMissed:"答错了。正确答案以绿色高亮显示。",
+    yourIQ:"您的智商分数",classLabel:"等级",correct:"答对",time:"用时",percentile:"百分位",
+    certTitle2:"您的证书已就绪！",
+    certSub2:"点击下方按钮即可生成带有您姓名和分数的个性化 PDF。完全免费。",
+    download:"下载 PDF 证书",retake:"重新评估",
+    certTitle:"智商证书",certSub:"在线认知评估",
+    certScore:"智商分数",certLevel:"等级",certDate:"日期",certId:"证书编号",
+    certIssued:"由智商测试签发 • DomWebsite 制作",
+    namePrompt:"请输入证书上的姓名：",
+    catVisual:"视觉推理",catLogical:"逻辑推理",catNumeric:"数字推理",
+    catVerbal:"语言推理",catSpatial:"空间推理",catKnowledge:"常识",catVocabulary:"词汇",
+    levels:{low:"低",below:"低于平均",avg:"平均",above:"高于平均",smart:"聪明",high:"高度聪明"},
+    visitsChipTitle:"网站访问量",
+    donationText:"如果您喜欢我们的工作并想向网站开发者捐款，请将任意金额发送到下面的 Pix 密钥：",
+    copyPix:"复制 Pix",copied:"已复制！",creditPrefix:"开发："
+  },
+  "ru":{
+    startTitle:'<span class="hl">Профессиональный</span> тест IQ',
+    subtitle:"15 вопросов из банка 30 фигур + 30 общих знаний.",
+    b1:"30 визуальных матриц и последовательностей (в стиле Равена)",
+    b2:"30 вопросов на общие знания, словарный запас, логику и математику",
+    b3:"Мгновенная обратная связь — при ошибке правильный ответ выделяется зелёным",
+    start:"Начать оценку",avg:"Средний IQ сегодня: 128",
+    freeNote:"Сертификат в PDF 100% бесплатно. Без регистрации, оплаты и подписки.",
+    q:"Вопрос",of:"из",next:"Далее",back:"Назад",finish:"Показать результат",
+    youGotIt:"Верно!",youMissed:"Ошибка. Правильный ответ выделен зелёным.",
+    yourIQ:"Ваш IQ",classLabel:"Классификация",correct:"Верно",time:"Время",percentile:"Процентиль",
+    certTitle2:"Ваш сертификат готов!",
+    certSub2:"Нажмите кнопку ниже, чтобы создать PDF с вашим именем и баллом. Бесплатно.",
+    download:"Скачать сертификат PDF",retake:"Пройти заново",
+    certTitle:"СЕРТИФИКАТ IQ",certSub:"Онлайн-когнитивная оценка",
+    certScore:"Балл IQ",certLevel:"Классификация",certDate:"Дата",certId:"ID сертификата",
+    certIssued:"Выдан Тест IQ • разработано DomWebsite",
+    namePrompt:"Введите ваше имя:",
+    catVisual:"Визуальное мышление",catLogical:"Логическое мышление",catNumeric:"Числовое мышление",
+    catVerbal:"Вербальное мышление",catSpatial:"Пространственное мышление",catKnowledge:"Общие знания",catVocabulary:"Словарный запас",
+    levels:{low:"Низкий",below:"Ниже среднего",avg:"Средний",above:"Выше среднего",smart:"Умный",high:"Высокоинтеллектуальный"},
+    visitsChipTitle:"Посещения сайта",
+    donationText:"Если вам понравилась наша работа и вы хотите сделать пожертвование разработчику сайта, отправьте любую сумму на ключ Pix ниже:",
+    copyPix:"Копировать Pix",copied:"Скопировано!",creditPrefix:"Разработано"
+  },
+  "ar":{
+    startTitle:'اختبار ذكاء <span class="hl">احترافي</span>',
+    subtitle:"15 سؤالاً من بنك يحتوي على 30 سؤال شكل + 30 سؤال معرفة عامة.",
+    b1:"30 سؤال مصفوفة ومتتالية بصرية (على نمط رافن)",
+    b2:"30 سؤال معرفة عامة ومفردات ومنطق ورياضيات",
+    b3:"تغذية راجعة فورية — عند الخطأ تظهر الإجابة الصحيحة بالأخضر",
+    start:"ابدأ التقييم",avg:"متوسط نتيجة الذكاء اليوم: 128",
+    freeNote:"شهادة PDF مجانية 100%. بدون تسجيل، بدون دفع، بدون اشتراك.",
+    q:"السؤال",of:"من",next:"التالي",back:"رجوع",finish:"عرض نتيجتي",
+    youGotIt:"إجابة صحيحة!",youMissed:"إجابة خاطئة. الصحيحة مميزة بالأخضر.",
+    yourIQ:"نتيجة الذكاء",classLabel:"التصنيف",correct:"صحيحة",time:"الوقت",percentile:"المئين",
+    certTitle2:"شهادتك جاهزة!",
+    certSub2:"انقر على الزر أدناه لإنشاء PDF باسمك ودرجتك. مجاناً.",
+    download:"تحميل الشهادة PDF",retake:"إعادة التقييم",
+    certTitle:"شهادة الذكاء",certSub:"تقييم معرفي عبر الإنترنت",
+    certScore:"نتيجة الذكاء",certLevel:"التصنيف",certDate:"التاريخ",certId:"رقم الشهادة",
+    certIssued:"صادرة عن اختبار الذكاء • تطوير DomWebsite",
+    namePrompt:"أدخل اسمك للشهادة:",
+    catVisual:"التفكير البصري",catLogical:"التفكير المنطقي",catNumeric:"التفكير العددي",
+    catVerbal:"التفكير اللفظي",catSpatial:"التفكير المكاني",catKnowledge:"معرفة عامة",catVocabulary:"المفردات",
+    levels:{low:"منخفض",below:"أقل من المتوسط",avg:"متوسط",above:"أعلى من المتوسط",smart:"ذكي",high:"ذكي للغاية"},
+    visitsChipTitle:"زيارات الموقع",
+    donationText:"إذا أعجبك عملنا وتريد التبرع لمطور الموقع، أرسل أي مبلغ إلى مفتاح Pix أدناه:",
+    copyPix:"نسخ Pix",copied:"تم النسخ!",creditPrefix:"تطوير"
+  },
+  "hi":{
+    startTitle:'<span class="hl">पेशेवर</span> IQ टेस्ट',
+    subtitle:"30 विज़ुअल आकृति + 30 सामान्य ज्ञान प्रश्नों के बैंक से 15 प्रश्न।",
+    b1:"30 विज़ुअल मैट्रिक्स और अनुक्रम प्रश्न (Raven-शैली)",
+    b2:"30 सामान्य ज्ञान, शब्दावली, तर्क और गणित प्रश्न",
+    b3:"तत्काल फ़ीडबैक — गलत होने पर सही उत्तर हरे में दिखेगा",
+    start:"मूल्यांकन शुरू करें",avg:"आज का औसत IQ स्कोर: 128",
+    freeNote:"PDF प्रमाणपत्र 100% मुफ़्त। कोई साइन-अप, भुगतान या सदस्यता नहीं।",
+    q:"प्रश्न",of:"में से",next:"अगला",back:"वापस",finish:"मेरा परिणाम देखें",
+    youGotIt:"आपने सही किया!",youMissed:"गलत। सही उत्तर हरे में हाइलाइट है।",
+    yourIQ:"आपका IQ स्कोर",classLabel:"वर्गीकरण",correct:"सही",time:"समय",percentile:"प्रतिशतक",
+    certTitle2:"आपका प्रमाणपत्र तैयार है!",
+    certSub2:"अपने नाम और स्कोर के साथ व्यक्तिगत PDF बनाने के लिए नीचे बटन दबाएं। यह मुफ़्त है।",
+    download:"PDF प्रमाणपत्र डाउनलोड करें",retake:"मूल्यांकन फिर से लें",
+    certTitle:"IQ प्रमाणपत्र",certSub:"ऑनलाइन संज्ञानात्मक मूल्यांकन",
+    certScore:"IQ स्कोर",certLevel:"वर्गीकरण",certDate:"दिनांक",certId:"प्रमाणपत्र आईडी",
+    certIssued:"IQ टेस्ट द्वारा जारी • DomWebsite द्वारा विकसित",
+    namePrompt:"प्रमाणपत्र के लिए अपना नाम दर्ज करें:",
+    catVisual:"दृश्य तर्क",catLogical:"तार्किक तर्क",catNumeric:"संख्यात्मक तर्क",
+    catVerbal:"मौखिक तर्क",catSpatial:"स्थानिक तर्क",catKnowledge:"सामान्य ज्ञान",catVocabulary:"शब्दावली",
+    levels:{low:"निम्न",below:"औसत से नीचे",avg:"औसत",above:"औसत से ऊपर",smart:"बुद्धिमान",high:"अत्यधिक बुद्धिमान"},
+    visitsChipTitle:"साइट विज़िट",
+    donationText:"अगर आपको हमारा काम पसंद आया और आप साइट डेवलपर को दान करना चाहते हैं, तो नीचे दिए गए Pix कुंजी पर कोई भी राशि भेजें:",
+    copyPix:"Pix कॉपी करें",copied:"कॉपी हो गया!",creditPrefix:"द्वारा विकसित"
+  },
+  "ko":{
+    startTitle:'<span class="hl">전문가용</span> IQ 테스트',
+    subtitle:"시각 도형 30문제 + 일반 상식 30문제 은행에서 15문제를 출제합니다.",
+    b1:"30개의 시각 매트릭스 및 시퀀스 문제 (Raven 스타일)",
+    b2:"30개의 일반 상식, 어휘, 논리 및 수학 문제",
+    b3:"즉각적 피드백 — 틀리면 정답이 녹색으로 표시됩니다",
+    start:"평가 시작",avg:"오늘의 평균 IQ 점수: 128",
+    freeNote:"PDF 자격증 100% 무료. 가입, 결제, 구독 없음.",
+    q:"질문",of:"/",next:"다음",back:"뒤로",finish:"내 결과 보기",
+    youGotIt:"정답입니다!",youMissed:"오답입니다. 정답은 녹색으로 표시됩니다.",
+    yourIQ:"당신의 IQ 점수",classLabel:"분류",correct:"정답",time:"시간",percentile:"백분위",
+    certTitle2:"자격증이 준비되었습니다!",
+    certSub2:"아래 버튼을 클릭하면 이름과 점수가 포함된 PDF가 생성됩니다. 무료입니다.",
+    download:"PDF 자격증 다운로드",retake:"다시 평가하기",
+    certTitle:"IQ 자격증",certSub:"온라인 인지 평가",
+    certScore:"IQ 점수",certLevel:"분류",certDate:"날짜",certId:"자격증 ID",
+    certIssued:"IQ 테스트 발급 • DomWebsite 제작",
+    namePrompt:"자격증에 표시할 이름을 입력하세요:",
+    catVisual:"시각적 추론",catLogical:"논리적 추론",catNumeric:"수치적 추론",
+    catVerbal:"언어적 추론",catSpatial:"공간적 추론",catKnowledge:"일반 상식",catVocabulary:"어휘",
+    levels:{low:"낮음",below:"평균 이하",avg:"평균",above:"평균 이상",smart:"지능적",high:"매우 지능적"},
+    visitsChipTitle:"사이트 방문",
+    donationText:"우리 작업이 마음에 들고 사이트 개발자에게 기부하고 싶다면 아래 Pix 키로 금액을 보내주세요:",
+    copyPix:"Pix 복사",copied:"복사되었습니다!",creditPrefix:"개발:"
+  },
+  "tr":{
+    startTitle:'<span class="hl">Profesyonel</span> IQ Testi',
+    subtitle:"30 görsel figür + 30 genel kültür sorusundan oluşan bankadan 15 soru.",
+    b1:"30 görsel matris ve dizi sorusu (Raven tarzı)",
+    b2:"30 genel kültür, kelime, mantık ve matematik sorusu",
+    b3:"Anında geri bildirim — yanlış yaparsan doğru cevap yeşil gösterilir",
+    start:"Değerlendirmeyi başlat",avg:"Bugünkü ortalama IQ: 128",
+    freeNote:"PDF sertifika %100 ücretsiz. Kayıt, ödeme veya abonelik yok.",
+    q:"Soru",of:"/",next:"Sonraki",back:"Geri",finish:"Sonucumu gör",
+    youGotIt:"Doğru!",youMissed:"Yanlış. Doğru cevap yeşil vurgulanmış.",
+    yourIQ:"IQ puanınız",classLabel:"Sınıflandırma",correct:"Doğru",time:"Süre",percentile:"Yüzdelik",
+    certTitle2:"Sertifikanız hazır!",
+    certSub2:"Adınız ve puanınızla kişiselleştirilmiş PDF oluşturmak için aşağıdaki butona tıklayın. Ücretsiz.",
+    download:"PDF sertifika indir",retake:"Yeniden değerlendir",
+    certTitle:"IQ SERTİFİKASI",certSub:"Çevrimiçi Bilişsel Değerlendirme",
+    certScore:"IQ Puanı",certLevel:"Sınıflandırma",certDate:"Tarih",certId:"Sertifika Kimliği",
+    certIssued:"IQ Testi tarafından verildi • DomWebsite tarafından geliştirildi",
+    namePrompt:"Sertifika için adınızı girin:",
+    catVisual:"Görsel Muhakeme",catLogical:"Mantıksal Muhakeme",catNumeric:"Sayısal Muhakeme",
+    catVerbal:"Sözel Muhakeme",catSpatial:"Uzamsal Muhakeme",catKnowledge:"Genel Kültür",catVocabulary:"Kelime Dağarcığı",
+    levels:{low:"Düşük",below:"Ortalamanın Altında",avg:"Ortalama",above:"Ortalamanın Üstünde",smart:"Zeki",high:"Yüksek Zekalı"},
+    visitsChipTitle:"Site ziyaretleri",
+    donationText:"Çalışmamızı beğendiyseniz ve site geliştiricisine bağış yapmak istiyorsanız, aşağıdaki Pix anahtarına herhangi bir miktar gönderin:",
+    copyPix:"Pix kopyala",copied:"Kopyalandı!",creditPrefix:"Geliştiren"
+  },
+  "nl":{
+    startTitle:'<span class="hl">Professionele</span> IQ Test',
+    subtitle:"15 vragen uit een bank van 30 visuele figuren + 30 algemene kennisvragen.",
+    b1:"30 visuele matrix- en sequentievragen (Raven-achtig)",
+    b2:"30 algemene kennis-, vocabulaire-, logica- en wiskundevragen",
+    b3:"Directe feedback — bij fout wordt het juiste antwoord groen gemarkeerd",
+    start:"Beoordeling starten",avg:"Gemiddelde IQ-score vandaag: 128",
+    freeNote:"PDF-certificaat 100% gratis. Geen aanmelding, betaling of abonnement.",
+    q:"Vraag",of:"van",next:"Volgende",back:"Terug",finish:"Mijn resultaat bekijken",
+    youGotIt:"Je had het goed!",youMissed:"Je had het fout. Het juiste antwoord is groen gemarkeerd.",
+    yourIQ:"Je IQ-score",classLabel:"Classificatie",correct:"Correct",time:"Tijd",percentile:"Percentiel",
+    certTitle2:"Je certificaat is klaar!",
+    certSub2:"Klik op de knop hieronder om de gepersonaliseerde PDF met je naam en score te genereren. Het is gratis.",
+    download:"PDF-certificaat downloaden",retake:"Opnieuw beoordelen",
+    certTitle:"IQ-CERTIFICAAT",certSub:"Online Cognitieve Beoordeling",
+    certScore:"IQ-score",certLevel:"Classificatie",certDate:"Datum",certId:"Certificaat-ID",
+    certIssued:"Uitgegeven door IQ Test • ontwikkeld door DomWebsite",
+    namePrompt:"Voer je naam in voor het certificaat:",
+    catVisual:"Visueel Redeneren",catLogical:"Logisch Redeneren",catNumeric:"Numeriek Redeneren",
+    catVerbal:"Verbaal Redeneren",catSpatial:"Ruimtelijk Redeneren",catKnowledge:"Algemene Kennis",catVocabulary:"Vocabulaire",
+    levels:{low:"Laag",below:"Onder Gemiddeld",avg:"Gemiddeld",above:"Boven Gemiddeld",smart:"Intelligent",high:"Zeer Intelligent"},
+    visitsChipTitle:"Website bezoeken",
+    donationText:"Als je ons werk leuk vond en wilt doneren aan de website-ontwikkelaar, stuur dan een bedrag naar de Pix-sleutel hieronder:",
+    copyPix:"Pix kopiëren",copied:"Gekopieerd!",creditPrefix:"Ontwikkeld door"
+  },
+  "pl":{
+    startTitle:'<span class="hl">Profesjonalny</span> Test IQ',
+    subtitle:"15 pytań z banku 30 figur wizualnych + 30 pytań z wiedzy ogólnej.",
+    b1:"30 pytań z matryc i sekwencji wizualnych (w stylu Ravena)",
+    b2:"30 pytań z wiedzy ogólnej, słownictwa, logiki i matematyki",
+    b3:"Natychmiastowa informacja zwrotna — przy błędzie poprawna odpowiedź jest podświetlona na zielono",
+    start:"Rozpocznij ocenę",avg:"Średni wynik IQ dzisiaj: 128",
+    freeNote:"Certyfikat PDF 100% za darmo. Bez rejestracji, płatności i subskrypcji.",
+    q:"Pytanie",of:"z",next:"Następne",back:"Wstecz",finish:"Zobacz mój wynik",
+    youGotIt:"Dobrze!",youMissed:"Błąd. Poprawna odpowiedź jest podświetlona na zielono.",
+    yourIQ:"Twój wynik IQ",classLabel:"Klasyfikacja",correct:"Poprawne",time:"Czas",percentile:"Percentyl",
+    certTitle2:"Twój certyfikat jest gotowy!",
+    certSub2:"Kliknij przycisk poniżej, aby wygenerować spersonalizowany PDF z imieniem i wynikiem. Za darmo.",
+    download:"Pobierz certyfikat PDF",retake:"Powtórz ocenę",
+    certTitle:"CERTYFIKAT IQ",certSub:"Internetowa Ocena Poznawcza",
+    certScore:"Wynik IQ",certLevel:"Klasyfikacja",certDate:"Data",certId:"ID certyfikatu",
+    certIssued:"Wydany przez Test IQ • opracowany przez DomWebsite",
+    namePrompt:"Wpisz swoje imię do certyfikatu:",
+    catVisual:"Rozumowanie Wizualne",catLogical:"Rozumowanie Logiczne",catNumeric:"Rozumowanie Numeryczne",
+    catVerbal:"Rozumowanie Werbalne",catSpatial:"Rozumowanie Przestrzenne",catKnowledge:"Wiedza Ogólna",catVocabulary:"Słownictwo",
+    levels:{low:"Niski",below:"Poniżej Przeciętnej",avg:"Przeciętny",above:"Powyżej Przeciętnej",smart:"Inteligentny",high:"Wysoce Inteligentny"},
+    visitsChipTitle:"Odwiedziny strony",
+    donationText:"Jeśli podobała Ci się nasza praca i chcesz przekazać datek deweloperowi strony, wyślij dowolną kwotę na klucz Pix poniżej:",
+    copyPix:"Kopiuj Pix",copied:"Skopiowano!",creditPrefix:"Opracowane przez"
+  },
+  "sv":{
+    startTitle:'<span class="hl">Professionellt</span> IQ-test',
+    subtitle:"15 frågor från en bank med 30 visuella figurer + 30 allmänna kunskapsfrågor.",
+    b1:"30 visuella matris- och sekvensfrågor (Raven-liknande)",
+    b2:"30 frågor om allmänna kunskaper, ordförråd, logik och matematik",
+    b3:"Omedelbar återkoppling — om du har fel markeras rätt svar i grönt",
+    start:"Starta bedömning",avg:"Genomsnittligt IQ idag: 128",
+    freeNote:"PDF-certifikat 100% gratis. Ingen registrering, betalning eller prenumeration.",
+    q:"Fråga",of:"av",next:"Nästa",back:"Tillbaka",finish:"Se mitt resultat",
+    youGotIt:"Du hade rätt!",youMissed:"Du hade fel. Rätt svar är grönmarkerat.",
+    yourIQ:"Din IQ-poäng",classLabel:"Klassificering",correct:"Rätt",time:"Tid",percentile:"Percentil",
+    certTitle2:"Ditt certifikat är klart!",
+    certSub2:"Klicka på knappen nedan för att skapa den personliga PDF-filen med ditt namn och din poäng. Det är gratis.",
+    download:"Ladda ner PDF-certifikat",retake:"Gör om bedömningen",
+    certTitle:"IQ-CERTIFIKAT",certSub:"Online Kognitiv Bedömning",
+    certScore:"IQ-poäng",certLevel:"Klassificering",certDate:"Datum",certId:"Certifikat-ID",
+    certIssued:"Utfärdat av IQ-test • utvecklat av DomWebsite",
+    namePrompt:"Ange ditt namn för certifikatet:",
+    catVisual:"Visuellt Tänkande",catLogical:"Logiskt Tänkande",catNumeric:"Numeriskt Tänkande",
+    catVerbal:"Verbalt Tänkande",catSpatial:"Rumsligt Tänkande",catKnowledge:"Allmänbildning",catVocabulary:"Ordförråd",
+    levels:{low:"Låg",below:"Under Genomsnittet",avg:"Genomsnitt",above:"Över Genomsnittet",smart:"Intelligent",high:"Högintelligent"},
+    visitsChipTitle:"Webbplatsbesök",
+    donationText:"Om du gillade vårt arbete och vill donera till webbplatsutvecklaren, skicka valfritt belopp till Pix-nyckeln nedan:",
+    copyPix:"Kopiera Pix",copied:"Kopierat!",creditPrefix:"Utvecklad av"
+  },
+  "id":{
+    startTitle:'Tes IQ <span class="hl">Profesional</span>',
+    subtitle:"15 pertanyaan dari bank 30 gambar visual + 30 pertanyaan pengetahuan umum.",
+    b1:"30 pertanyaan matriks dan urutan visual (gaya Raven)",
+    b2:"30 pertanyaan pengetahuan umum, kosakata, logika, dan matematika",
+    b3:"Umpan balik instan — jika salah, jawaban yang benar disorot dengan warna hijau",
+    start:"Mulai penilaian",avg:"Rata-rata skor IQ hari ini: 128",
+    freeNote:"Sertifikat PDF 100% gratis. Tanpa pendaftaran, pembayaran, atau langganan.",
+    q:"Pertanyaan",of:"dari",next:"Berikutnya",back:"Kembali",finish:"Lihat hasil saya",
+    youGotIt:"Anda benar!",youMissed:"Anda salah. Jawaban yang benar disorot dengan hijau.",
+    yourIQ:"Skor IQ Anda",classLabel:"Klasifikasi",correct:"Benar",time:"Waktu",percentile:"Persentil",
+    certTitle2:"Sertifikat Anda sudah siap!",
+    certSub2:"Klik tombol di bawah untuk membuat PDF yang dipersonalisasi dengan nama dan skor Anda. Gratis.",
+    download:"Unduh sertifikat PDF",retake:"Ulangi penilaian",
+    certTitle:"SERTIFIKAT IQ",certSub:"Penilaian Kognitif Online",
+    certScore:"Skor IQ",certLevel:"Klasifikasi",certDate:"Tanggal",certId:"ID Sertifikat",
+    certIssued:"Diterbitkan oleh Tes IQ • dikembangkan oleh DomWebsite",
+    namePrompt:"Masukkan nama Anda untuk sertifikat:",
+    catVisual:"Penalaran Visual",catLogical:"Penalaran Logis",catNumeric:"Penalaran Numerik",
+    catVerbal:"Penalaran Verbal",catSpatial:"Penalaran Spasial",catKnowledge:"Pengetahuan Umum",catVocabulary:"Kosakata",
+    levels:{low:"Rendah",below:"Di Bawah Rata-rata",avg:"Rata-rata",above:"Di Atas Rata-rata",smart:"Cerdas",high:"Sangat Cerdas"},
+    visitsChipTitle:"Kunjungan situs",
+    donationText:"Jika Anda menyukai pekerjaan kami dan ingin berdonasi kepada pengembang situs, kirim jumlah berapa pun ke kunci Pix di bawah ini:",
+    copyPix:"Salin Pix",copied:"Disalin!",creditPrefix:"Dikembangkan oleh"
+  },
+  "vi":{
+    startTitle:'Bài Kiểm Tra IQ <span class="hl">Chuyên Nghiệp</span>',
+    subtitle:"15 câu hỏi từ ngân hàng 30 hình ảnh trực quan + 30 câu hỏi kiến thức chung.",
+    b1:"30 câu hỏi ma trận và chuỗi trực quan (kiểu Raven)",
+    b2:"30 câu hỏi kiến thức chung, từ vựng, logic và toán học",
+    b3:"Phản hồi ngay lập tức — nếu sai, đáp án đúng được làm nổi bật bằng màu xanh lá",
+    start:"Bắt đầu đánh giá",avg:"Điểm IQ trung bình hôm nay: 128",
+    freeNote:"Chứng chỉ PDF miễn phí 100%. Không đăng ký, không thanh toán, không đăng ký định kỳ.",
+    q:"Câu hỏi",of:"trong",next:"Tiếp theo",back:"Quay lại",finish:"Xem kết quả của tôi",
+    youGotIt:"Bạn đã đúng!",youMissed:"Bạn đã sai. Đáp án đúng được làm nổi bật bằng màu xanh lá.",
+    yourIQ:"Điểm IQ của bạn",classLabel:"Phân loại",correct:"Đúng",time:"Thời gian",percentile:"Phân vị",
+    certTitle2:"Chứng chỉ của bạn đã sẵn sàng!",
+    certSub2:"Nhấp vào nút bên dưới để tạo PDF được cá nhân hóa với tên và điểm của bạn. Miễn phí.",
+    download:"Tải xuống chứng chỉ PDF",retake:"Đánh giá lại",
+    certTitle:"CHỨNG CHỈ IQ",certSub:"Đánh Giá Nhận Thức Trực Tuyến",
+    certScore:"Điểm IQ",certLevel:"Phân loại",certDate:"Ngày",certId:"ID chứng chỉ",
+    certIssued:"Phát hành bởi Bài Kiểm Tra IQ • phát triển bởi DomWebsite",
+    namePrompt:"Nhập tên của bạn cho chứng chỉ:",
+    catVisual:"Lý Luận Trực Quan",catLogical:"Lý Luận Logic",catNumeric:"Lý Luận Số Học",
+    catVerbal:"Lý Luận Ngôn Ngữ",catSpatial:"Lý Luận Không Gian",catKnowledge:"Kiến Thức Chung",catVocabulary:"Từ Vựng",
+    levels:{low:"Thấp",below:"Dưới Trung Bình",avg:"Trung Bình",above:"Trên Trung Bình",smart:"Thông Minh",high:"Rất Thông Minh"},
+    visitsChipTitle:"Lượt truy cập",
+    donationText:"Nếu bạn thích công việc của chúng tôi và muốn quyên góp cho nhà phát triển trang web, hãy gửi bất kỳ số tiền nào đến khóa Pix bên dưới:",
+    copyPix:"Sao chép Pix",copied:"Đã sao chép!",creditPrefix:"Phát triển bởi"
+  },
+  "th":{
+    startTitle:'แบบทดสอบ IQ <span class="hl">มืออาชีพ</span>',
+    subtitle:"15 คำถามจากคลัง 30 รูปภาพและ 30 คำถามความรู้ทั่วไป",
+    b1:"30 คำถามเมทริกซ์และลำดับภาพ (สไตล์ Raven)",
+    b2:"30 คำถามความรู้ทั่วไป คำศัพท์ ตรรกะ และคณิตศาสตร์",
+    b3:"ข้อเสนอแนะทันที — หากตอบผิด คำตอบที่ถูกจะไฮไลต์ด้วยสีเขียว",
+    start:"เริ่มการประเมิน",avg:"คะแนน IQ เฉลี่ยวันนี้: 128",
+    freeNote:"ใบรับรอง PDF ฟรี 100% ไม่ต้องสมัคร ไม่ต้องจ่าย ไม่มีสมาชิก",
+    q:"คำถาม",of:"จาก",next:"ถัดไป",back:"กลับ",finish:"ดูผลลัพธ์ของฉัน",
+    youGotIt:"คุณตอบถูก!",youMissed:"คุณตอบผิด คำตอบที่ถูกไฮไลต์ด้วยสีเขียว",
+    yourIQ:"คะแนน IQ ของคุณ",classLabel:"การจำแนก",correct:"ถูกต้อง",time:"เวลา",percentile:"เปอร์เซ็นไทล์",
+    certTitle2:"ใบรับรองของคุณพร้อมแล้ว!",
+    certSub2:"คลิกปุ่มด้านล่างเพื่อสร้าง PDF ที่ปรับแต่งตามชื่อและคะแนนของคุณ ฟรี",
+    download:"ดาวน์โหลดใบรับรอง PDF",retake:"ประเมินอีกครั้ง",
+    certTitle:"ใบรับรอง IQ",certSub:"การประเมินความรู้ความเข้าใจออนไลน์",
+    certScore:"คะแนน IQ",certLevel:"การจำแนก",certDate:"วันที่",certId:"ID ใบรับรอง",
+    certIssued:"ออกโดยแบบทดสอบ IQ • พัฒนาโดย DomWebsite",
+    namePrompt:"ป้อนชื่อของคุณสำหรับใบรับรอง:",
+    catVisual:"การใช้เหตุผลเชิงภาพ",catLogical:"การใช้เหตุผลเชิงตรรกะ",catNumeric:"การใช้เหตุผลเชิงตัวเลข",
+    catVerbal:"การใช้เหตุผลเชิงวาจา",catSpatial:"การใช้เหตุผลเชิงพื้นที่",catKnowledge:"ความรู้ทั่วไป",catVocabulary:"คำศัพท์",
+    levels:{low:"ต่ำ",below:"ต่ำกว่าค่าเฉลี่ย",avg:"เฉลี่ย",above:"สูงกว่าค่าเฉลี่ย",smart:"ฉลาด",high:"ฉลาดมาก"},
+    visitsChipTitle:"การเยี่ยมชมเว็บไซต์",
+    donationText:"หากคุณชอบงานของเราและต้องการบริจาคให้กับนักพัฒนาเว็บไซต์ โปรดส่งจำนวนเงินใดก็ได้ไปยังคีย์ Pix ด้านล่าง:",
+    copyPix:"คัดลอก Pix",copied:"คัดลอกแล้ว!",creditPrefix:"พัฒนาโดย"
+  },
+  "el":{
+    startTitle:'<span class="hl">Επαγγελματικό</span> Τεστ IQ',
+    subtitle:"15 ερωτήσεις από τράπεζα 30 οπτικών σχημάτων + 30 ερωτήσεων γενικών γνώσεων.",
+    b1:"30 ερωτήσεις οπτικών πινάκων και ακολουθιών (τύπου Raven)",
+    b2:"30 ερωτήσεις γενικών γνώσεων, λεξιλογίου, λογικής και μαθηματικών",
+    b3:"Άμεση ανατροφοδότηση — σε περίπτωση λάθους, η σωστή απάντηση επισημαίνεται με πράσινο",
+    start:"Έναρξη αξιολόγησης",avg:"Μέσο IQ σήμερα: 128",
+    freeNote:"Πιστοποιητικό PDF 100% δωρεάν. Χωρίς εγγραφή, πληρωμή ή συνδρομή.",
+    q:"Ερώτηση",of:"από",next:"Επόμενη",back:"Πίσω",finish:"Δες το αποτέλεσμά μου",
+    youGotIt:"Σωστά!",youMissed:"Λάθος. Η σωστή απάντηση επισημαίνεται με πράσινο.",
+    yourIQ:"Το IQ σας",classLabel:"Ταξινόμηση",correct:"Σωστές",time:"Χρόνος",percentile:"Εκατοστημόριο",
+    certTitle2:"Το πιστοποιητικό σας είναι έτοιμο!",
+    certSub2:"Κάντε κλικ στο κουμπί παρακάτω για να δημιουργήσετε το εξατομικευμένο PDF με το όνομά σας και τη βαθμολογία σας. Είναι δωρεάν.",
+    download:"Λήψη πιστοποιητικού PDF",retake:"Επανάληψη αξιολόγησης",
+    certTitle:"ΠΙΣΤΟΠΟΙΗΤΙΚΟ IQ",certSub:"Διαδικτυακή Γνωστική Αξιολόγηση",
+    certScore:"Βαθμολογία IQ",certLevel:"Ταξινόμηση",certDate:"Ημερομηνία",certId:"ID Πιστοποιητικού",
+    certIssued:"Εκδόθηκε από το Τεστ IQ • αναπτύχθηκε από την DomWebsite",
+    namePrompt:"Εισάγετε το όνομά σας για το πιστοποιητικό:",
+    catVisual:"Οπτική Συλλογιστική",catLogical:"Λογική Συλλογιστική",catNumeric:"Αριθμητική Συλλογιστική",
+    catVerbal:"Λεκτική Συλλογιστική",catSpatial:"Χωρική Συλλογιστική",catKnowledge:"Γενικές Γνώσεις",catVocabulary:"Λεξιλόγιο",
+    levels:{low:"Χαμηλό",below:"Κάτω από τον Μέσο Όρο",avg:"Μέσος Όρος",above:"Πάνω από τον Μέσο Όρο",smart:"Έξυπνο",high:"Πολύ Έξυπνο"},
+    visitsChipTitle:"Επισκέψεις ιστότοπου",
+    donationText:"Αν σας άρεσε η δουλειά μας και θέλετε να κάνετε δωρεά στον προγραμματιστή του ιστότοπου, στείλτε οποιοδήποτε ποσό στο κλειδί Pix παρακάτω:",
+    copyPix:"Αντιγραφή Pix",copied:"Αντιγράφηκε!",creditPrefix:"Αναπτύχθηκε από"
+  }
+};
+
+function t(k){var L=I18N[getLang()]||I18N["pt-BR"];return (k in L)?L[k]:I18N["pt-BR"][k];}
+function tLevels(){var L=I18N[getLang()]||I18N["pt-BR"];return L.levels||I18N["pt-BR"].levels;}
+function catLabel(c){return t("cat"+c);}
+function getLang(){
+  var l="pt-BR";
+  try{
+    var c=document.cookie.match(/(?:^|; )lang=([^;]+)/);
+    l=(c&&c[1])||localStorage.getItem("lang")||navigator.language||"pt-BR";
+  }catch(e){l=navigator.language||"pt-BR";}
+  for(var i=0;i<LANGS.length;i++){var x=LANGS[i];if(x.code===l||x.code.split("-")[0]===l.split("-")[0])return x.code;}
+  return "pt-BR";
+}
+function setLang(code){
+  try{document.cookie="lang="+code+";path=/;max-age=31536000;SameSite=Lax";}catch(e){}
+  try{localStorage.setItem("lang",code);}catch(e){}
+  document.documentElement.lang=code;
+  document.documentElement.dir=code==="ar"?"rtl":"ltr";
+  renderLang();
+  applyFooterI18N();
+  renderVisits();
+  render();
+}
+
+/* ============== SVG BUILDERS ============== */
+var SVG={
+  C:"#0f1720",
+  circle:function(c,f){c=c||SVG.C;f=f!==false;return '<svg viewBox="0 0 100 100"><circle cx="50" cy="50" r="34" fill="'+(f?c:"none")+'" stroke="'+c+'" stroke-width="6"/></svg>';},
+  circleS:function(c){c=c||SVG.C;return '<svg viewBox="0 0 100 100"><circle cx="50" cy="50" r="24" fill="'+c+'"/></svg>';},
+  square:function(c,f){c=c||SVG.C;f=f!==false;return '<svg viewBox="0 0 100 100"><rect x="16" y="16" width="68" height="68" rx="6" fill="'+(f?c:"none")+'" stroke="'+c+'" stroke-width="6"/></svg>';},
+  squareS:function(c){c=c||SVG.C;return '<svg viewBox="0 0 100 100"><rect x="28" y="28" width="44" height="44" rx="4" fill="'+c+'"/></svg>';},
+  triangle:function(c,f){c=c||SVG.C;f=f!==false;return '<svg viewBox="0 0 100 100"><polygon points="50,14 88,84 12,84" fill="'+(f?c:"none")+'" stroke="'+c+'" stroke-width="6" stroke-linejoin="round"/></svg>';},
+  triangleD:function(c){c=c||SVG.C;return '<svg viewBox="0 0 100 100"><polygon points="50,86 12,16 88,16" fill="'+c+'"/></svg>';},
+  diamond:function(c,f){c=c||SVG.C;f=f!==false;return '<svg viewBox="0 0 100 100"><polygon points="50,10 90,50 50,90 10,50" fill="'+(f?c:"none")+'" stroke="'+c+'" stroke-width="6" stroke-linejoin="round"/></svg>';},
+  star:function(c){c=c||SVG.C;return '<svg viewBox="0 0 100 100"><polygon points="50,10 61,40 92,40 67,58 76,88 50,70 24,88 33,58 8,40 39,40" fill="'+c+'"/></svg>';},
+  starOutline:function(c){c=c||SVG.C;return '<svg viewBox="0 0 100 100"><polygon points="50,10 61,40 92,40 67,58 76,88 50,70 24,88 33,58 8,40 39,40" fill="none" stroke="'+c+'" stroke-width="5" stroke-linejoin="round"/></svg>';},
+  cross:function(c){c=c||SVG.C;return '<svg viewBox="0 0 100 100"><path d="M30 30 L70 70 M70 30 L30 70" stroke="'+c+'" stroke-width="8" stroke-linecap="round" fill="none"/></svg>';},
+  plus:function(c){c=c||SVG.C;return '<svg viewBox="0 0 100 100"><path d="M50 22 V78 M22 50 H78" stroke="'+c+'" stroke-width="8" stroke-linecap="round" fill="none"/></svg>';},
+  arrowUp:function(c){c=c||SVG.C;return '<svg viewBox="0 0 100 100"><path d="M50 80 V30 M32 48 L50 28 L68 48" stroke="'+c+'" stroke-width="7" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>';},
+  arrowRight:function(c){c=c||SVG.C;return '<svg viewBox="0 0 100 100"><path d="M20 50 H70 M52 32 L72 50 L52 68" stroke="'+c+'" stroke-width="7" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>';},
+  arrowDown:function(c){c=c||SVG.C;return '<svg viewBox="0 0 100 100"><path d="M50 20 V70 M32 52 L50 72 L68 52" stroke="'+c+'" stroke-width="7" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>';},
+  arrowLeft:function(c){c=c||SVG.C;return '<svg viewBox="0 0 100 100"><path d="M80 50 H30 M48 32 L28 50 L48 68" stroke="'+c+'" stroke-width="7" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>';},
+  arrowNW:function(c){c=c||SVG.C;return '<svg viewBox="0 0 100 100"><path d="M30 30 L70 70 M30 30 L30 55 M30 30 L55 30" stroke="'+c+'" stroke-width="7" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>';},
+  arrowNE:function(c){c=c||SVG.C;return '<svg viewBox="0 0 100 100"><path d="M30 70 L70 30 M70 30 L70 55 M70 30 L45 30" stroke="'+c+'" stroke-width="7" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>';},
+  dot1:function(c){c=c||SVG.C;return '<svg viewBox="0 0 100 100"><circle cx="50" cy="50" r="14" fill="'+c+'"/></svg>';},
+  dot2:function(c){c=c||SVG.C;return '<svg viewBox="0 0 100 100"><circle cx="35" cy="50" r="11" fill="'+c+'"/><circle cx="65" cy="50" r="11" fill="'+c+'"/></svg>';},
+  dot3:function(c){c=c||SVG.C;return '<svg viewBox="0 0 100 100"><circle cx="24" cy="50" r="9" fill="'+c+'"/><circle cx="50" cy="50" r="9" fill="'+c+'"/><circle cx="76" cy="50" r="9" fill="'+c+'"/></svg>';},
+  dot4:function(c){c=c||SVG.C;return '<svg viewBox="0 0 100 100"><circle cx="30" cy="30" r="9" fill="'+c+'"/><circle cx="70" cy="30" r="9" fill="'+c+'"/><circle cx="30" cy="70" r="9" fill="'+c+'"/><circle cx="70" cy="70" r="9" fill="'+c+'"/></svg>';},
+  dot5:function(c){c=c||SVG.C;return '<svg viewBox="0 0 100 100"><circle cx="30" cy="30" r="9" fill="'+c+'"/><circle cx="70" cy="30" r="9" fill="'+c+'"/><circle cx="50" cy="50" r="9" fill="'+c+'"/><circle cx="30" cy="70" r="9" fill="'+c+'"/><circle cx="70" cy="70" r="9" fill="'+c+'"/></svg>';},
+  quad1:function(c){c=c||SVG.C;return '<svg viewBox="0 0 100 100"><rect x="10" y="10" width="40" height="40" fill="'+c+'"/><rect x="10" y="10" width="80" height="80" fill="none" stroke="'+c+'" stroke-width="4"/></svg>';},
+  quad2:function(c){c=c||SVG.C;return '<svg viewBox="0 0 100 100"><rect x="50" y="10" width="40" height="40" fill="'+c+'"/><rect x="10" y="10" width="80" height="80" fill="none" stroke="'+c+'" stroke-width="4"/></svg>';},
+  quad3:function(c){c=c||SVG.C;return '<svg viewBox="0 0 100 100"><rect x="10" y="50" width="40" height="40" fill="'+c+'"/><rect x="10" y="10" width="80" height="80" fill="none" stroke="'+c+'" stroke-width="4"/></svg>';},
+  quad4:function(c){c=c||SVG.C;return '<svg viewBox="0 0 100 100"><rect x="50" y="50" width="40" height="40" fill="'+c+'"/><rect x="10" y="10" width="80" height="80" fill="none" stroke="'+c+'" stroke-width="4"/></svg>';},
+  quad12:function(c){c=c||SVG.C;return '<svg viewBox="0 0 100 100"><rect x="10" y="10" width="40" height="40" fill="'+c+'"/><rect x="50" y="10" width="40" height="40" fill="'+c+'"/><rect x="10" y="10" width="80" height="80" fill="none" stroke="'+c+'" stroke-width="4"/></svg>';},
+  quad34:function(c){c=c||SVG.C;return '<svg viewBox="0 0 100 100"><rect x="10" y="50" width="40" height="40" fill="'+c+'"/><rect x="50" y="50" width="40" height="40" fill="'+c+'"/><rect x="10" y="10" width="80" height="80" fill="none" stroke="'+c+'" stroke-width="4"/></svg>';},
+  quad14:function(c){c=c||SVG.C;return '<svg viewBox="0 0 100 100"><rect x="10" y="10" width="40" height="40" fill="'+c+'"/><rect x="50" y="50" width="40" height="40" fill="'+c+'"/><rect x="10" y="10" width="80" height="80" fill="none" stroke="'+c+'" stroke-width="4"/></svg>';},
+  quad23:function(c){c=c||SVG.C;return '<svg viewBox="0 0 100 100"><rect x="50" y="10" width="40" height="40" fill="'+c+'"/><rect x="10" y="50" width="40" height="40" fill="'+c+'"/><rect x="10" y="10" width="80" height="80" fill="none" stroke="'+c+'" stroke-width="4"/></svg>';},
+  bars1:function(c){c=c||SVG.C;return '<svg viewBox="0 0 100 100"><rect x="20" y="70" width="60" height="14" fill="'+c+'"/></svg>';},
+  bars2:function(c){c=c||SVG.C;return '<svg viewBox="0 0 100 100"><rect x="20" y="55" width="60" height="14" fill="'+c+'"/><rect x="20" y="75" width="60" height="14" fill="'+c+'"/></svg>';},
+  bars3:function(c){c=c||SVG.C;return '<svg viewBox="0 0 100 100"><rect x="20" y="25" width="60" height="14" fill="'+c+'"/><rect x="20" y="45" width="60" height="14" fill="'+c+'"/><rect x="20" y="65" width="60" height="14" fill="'+c+'"/></svg>';},
+  vBar1:function(c){c=c||SVG.C;return '<svg viewBox="0 0 100 100"><rect x="20" y="20" width="14" height="60" fill="'+c+'"/></svg>';},
+  vBar2:function(c){c=c||SVG.C;return '<svg viewBox="0 0 100 100"><rect x="20" y="20" width="14" height="60" fill="'+c+'"/><rect x="43" y="20" width="14" height="60" fill="'+c+'"/></svg>';},
+  vBar3:function(c){c=c||SVG.C;return '<svg viewBox="0 0 100 100"><rect x="20" y="20" width="14" height="60" fill="'+c+'"/><rect x="43" y="20" width="14" height="60" fill="'+c+'"/><rect x="66" y="20" width="14" height="60" fill="'+c+'"/></svg>';},
+  ring1:function(c){c=c||SVG.C;return '<svg viewBox="0 0 100 100"><circle cx="50" cy="50" r="34" fill="none" stroke="'+c+'" stroke-width="8"/></svg>';},
+  ring2:function(c){c=c||SVG.C;return '<svg viewBox="0 0 100 100"><circle cx="50" cy="50" r="34" fill="none" stroke="'+c+'" stroke-width="8"/><circle cx="50" cy="50" r="18" fill="none" stroke="'+c+'" stroke-width="6"/></svg>';},
+  ring3:function(c){c=c||SVG.C;return '<svg viewBox="0 0 100 100"><circle cx="50" cy="50" r="38" fill="none" stroke="'+c+'" stroke-width="6"/><circle cx="50" cy="50" r="26" fill="none" stroke="'+c+'" stroke-width="6"/><circle cx="50" cy="50" r="14" fill="none" stroke="'+c+'" stroke-width="6"/></svg>';},
+  ring4:function(c){c=c||SVG.C;return '<svg viewBox="0 0 100 100"><circle cx="50" cy="50" r="40" fill="none" stroke="'+c+'" stroke-width="5"/><circle cx="50" cy="50" r="30" fill="none" stroke="'+c+'" stroke-width="5"/><circle cx="50" cy="50" r="20" fill="none" stroke="'+c+'" stroke-width="5"/><circle cx="50" cy="50" r="10" fill="none" stroke="'+c+'" stroke-width="5"/></svg>';},
+  halfRight:function(c){c=c||SVG.C;return '<svg viewBox="0 0 100 100"><rect x="10" y="10" width="80" height="80" fill="none" stroke="'+c+'" stroke-width="4"/><path d="M50 10 A40 40 0 0 1 50 90 Z" fill="'+c+'"/></svg>';},
+  halfLeft:function(c){c=c||SVG.C;return '<svg viewBox="0 0 100 100"><rect x="10" y="10" width="80" height="80" fill="none" stroke="'+c+'" stroke-width="4"/><path d="M50 10 A40 40 0 0 0 50 90 Z" fill="'+c+'"/></svg>';},
+  halfTop:function(c){c=c||SVG.C;return '<svg viewBox="0 0 100 100"><rect x="10" y="10" width="80" height="80" fill="none" stroke="'+c+'" stroke-width="4"/><path d="M10 50 A40 40 0 0 1 90 50 Z" fill="'+c+'"/></svg>';},
+  halfBot:function(c){c=c||SVG.C;return '<svg viewBox="0 0 100 100"><rect x="10" y="10" width="80" height="80" fill="none" stroke="'+c+'" stroke-width="4"/><path d="M10 50 A40 40 0 0 0 90 50 Z" fill="'+c+'"/></svg>';},
+  cross4:function(c){c=c||SVG.C;return '<svg viewBox="0 0 100 100"><path d="M50 20 V80 M20 50 H80" stroke="'+c+'" stroke-width="6"/><circle cx="50" cy="50" r="30" fill="none" stroke="'+c+'" stroke-width="5"/></svg>';},
+  cornerTLBR:function(c){c=c||SVG.C;return '<svg viewBox="0 0 100 100"><rect x="10" y="10" width="30" height="30" fill="'+c+'"/><rect x="60" y="60" width="30" height="30" fill="'+c+'"/><rect x="10" y="10" width="80" height="80" fill="none" stroke="'+c+'" stroke-width="4"/></svg>';},
+  cornerTRBL:function(c){c=c||SVG.C;return '<svg viewBox="0 0 100 100"><rect x="60" y="10" width="30" height="30" fill="'+c+'"/><rect x="10" y="60" width="30" height="30" fill="'+c+'"/><rect x="10" y="10" width="80" height="80" fill="none" stroke="'+c+'" stroke-width="4"/></svg>';},
+  tri4:function(c){c=c||SVG.C;return '<svg viewBox="0 0 100 100"><polygon points="50,20 65,50 35,50" fill="'+c+'"/><polygon points="50,80 65,50 35,50" fill="'+c+'"/><polygon points="20,50 35,50 35,80" fill="'+c+'"/><polygon points="80,50 65,50 65,80" fill="'+c+'"/></svg>';},
+  starX:function(c){c=c||SVG.C;return '<svg viewBox="0 0 100 100"><polygon points="20,20 40,20 20,40" fill="'+c+'"/><polygon points="80,20 80,40 60,20" fill="'+c+'"/><polygon points="20,80 40,80 20,60" fill="'+c+'"/><polygon points="80,80 80,60 60,80" fill="'+c+'"/></svg>';}
+};
+
+/* ============== 30 QUESTÕES VISUAIS ============== */
+var VISUAL_QUESTIONS=[
+  {cat:"Visual",q:"Qual figura completa o padrão da matriz?",
+   matrix:[{svg:SVG.circle()},{svg:SVG.square()},{svg:SVG.triangle()},{svg:SVG.square()},{svg:SVG.triangle()},{svg:SVG.circle()},{svg:SVG.triangle()},{svg:SVG.circle()},{missing:true}],
+   o:[SVG.circle(),SVG.square(),SVG.triangle(),SVG.diamond(),SVG.star(),SVG.cross()],a:1},
+  {cat:"Visual",q:"A quantidade de pontos cresce em cada linha e coluna. Qual completa?",
+   matrix:[{svg:SVG.dot1()},{svg:SVG.dot2()},{svg:SVG.dot3()},{svg:SVG.dot2()},{svg:SVG.dot3()},{svg:SVG.dot4()},{svg:SVG.dot3()},{svg:SVG.dot4()},{missing:true}],
+   o:[SVG.dot1(),SVG.dot2(),SVG.dot3(),SVG.dot4(),SVG.dot5(),SVG.circleS()],a:4},
+  {cat:"Visual",q:"A seta gira 90° no sentido horário a cada célula. Qual completa?",
+   matrix:[{svg:SVG.arrowUp()},{svg:SVG.arrowRight()},{svg:SVG.arrowDown()},{svg:SVG.arrowRight()},{svg:SVG.arrowDown()},{svg:SVG.arrowLeft()},{svg:SVG.arrowDown()},{svg:SVG.arrowLeft()},{missing:true}],
+   o:[SVG.arrowUp(),SVG.arrowRight(),SVG.arrowDown(),SVG.arrowLeft(),SVG.plus(),SVG.cross()],a:0},
+  {cat:"Visual",q:"O quadrante preenchido gira em sentido horário. Qual completa?",
+   matrix:[{svg:SVG.quad1()},{svg:SVG.quad2()},{svg:SVG.quad4()},{svg:SVG.quad2()},{svg:SVG.quad4()},{svg:SVG.quad3()},{svg:SVG.quad4()},{svg:SVG.quad3()},{missing:true}],
+   o:[SVG.quad1(),SVG.quad2(),SVG.quad3(),SVG.quad4(),SVG.quad12(),SVG.quad34()],a:0},
+  {cat:"Visual",q:"Cada coluna adiciona uma barra. Qual completa a matriz?",
+   matrix:[{svg:SVG.bars1()},{svg:SVG.bars2()},{svg:SVG.bars3()},{svg:SVG.bars2()},{svg:SVG.bars3()},{svg:SVG.bars1()},{svg:SVG.bars3()},{svg:SVG.bars1()},{missing:true}],
+   o:[SVG.bars1(),SVG.bars2(),SVG.bars3(),SVG.vBar1(),SVG.vBar2(),SVG.vBar3()],a:1},
+  {cat:"Visual",q:"Observe os pares de quadrantes. Qual completa?",
+   matrix:[{svg:SVG.quad1()},{svg:SVG.quad12()},{svg:SVG.quad14()},{svg:SVG.quad2()},{svg:SVG.quad14()},{svg:SVG.quad23()},{svg:SVG.quad4()},{svg:SVG.quad34()},{missing:true}],
+   o:[SVG.quad1(),SVG.quad12(),SVG.quad34(),SVG.quad23(),SVG.quad4(),SVG.quad2()],a:0},
+  {cat:"Visual",q:"A quantidade de anéis aumenta em cada linha. Qual completa?",
+   matrix:[{svg:SVG.ring1()},{svg:SVG.ring2()},{svg:SVG.ring3()},{svg:SVG.ring2()},{svg:SVG.ring3()},{svg:SVG.ring1()},{svg:SVG.ring3()},{svg:SVG.ring1()},{missing:true}],
+   o:[SVG.ring1(),SVG.ring2(),SVG.ring3(),SVG.ring4(),SVG.circleS(),SVG.dot4()],a:1},
+  {cat:"Visual",q:"A metade preenchida gira 90° em sentido horário. Qual completa?",
+   matrix:[{svg:SVG.halfTop()},{svg:SVG.halfRight()},{svg:SVG.halfBot()},{svg:SVG.halfRight()},{svg:SVG.halfBot()},{svg:SVG.halfLeft()},{svg:SVG.halfBot()},{svg:SVG.halfLeft()},{missing:true}],
+   o:[SVG.halfTop(),SVG.halfRight(),SVG.halfBot(),SVG.halfLeft(),SVG.circleS(),SVG.squareS()],a:0},
+  {cat:"Visual",q:"A figura acumula elementos na diagonal. Qual completa?",
+   matrix:[{svg:SVG.dot1()},{svg:SVG.quad1()},{svg:SVG.quad1()},{svg:SVG.quad1()},{svg:SVG.cornerTLBR()},{svg:SVG.cornerTLBR()},{svg:SVG.cornerTLBR()},{svg:SVG.cornerTLBR()},{missing:true}],
+   o:[SVG.dot1(),SVG.quad1(),SVG.quad2(),SVG.cornerTLBR(),SVG.cornerTRBL(),SVG.quad14()],a:3},
+  {cat:"Visual",q:"Cada linha soma os triângulos das duas células anteriores. Qual completa?",
+   matrix:[{svg:SVG.triangle()},{svg:SVG.triangleD()},{svg:SVG.tri4()},{svg:SVG.triangleD()},{svg:SVG.tri4()},{svg:SVG.triangle()},{svg:SVG.tri4()},{svg:SVG.triangle()},{missing:true}],
+   o:[SVG.triangle(),SVG.triangleD(),SVG.tri4(),SVG.starX(),SVG.plus(),SVG.cross()],a:1},
+  {cat:"Visual",q:"O padrão alterna preenchido e vazio. Qual completa?",
+   matrix:[{svg:SVG.circle(SVG.C,true)},{svg:SVG.circle(SVG.C,false)},{svg:SVG.circle(SVG.C,true)},{svg:SVG.circle(SVG.C,false)},{svg:SVG.circle(SVG.C,true)},{svg:SVG.circle(SVG.C,false)},{svg:SVG.circle(SVG.C,true)},{svg:SVG.circle(SVG.C,false)},{missing:true}],
+   o:[SVG.circle(SVG.C,true),SVG.circle(SVG.C,false),SVG.square(SVG.C,true),SVG.square(SVG.C,false),SVG.triangle(),SVG.diamond()],a:0},
+  {cat:"Visual",q:"As setas apontam em direções que giram. Qual completa?",
+   matrix:[{svg:SVG.arrowNE()},{svg:SVG.arrowRight()},{svg:SVG.arrowDown()},{svg:SVG.arrowRight()},{svg:SVG.arrowDown()},{svg:SVG.arrowLeft()},{svg:SVG.arrowDown()},{svg:SVG.arrowLeft()},{missing:true}],
+   o:[SVG.arrowUp(),SVG.arrowNW(),SVG.arrowRight(),SVG.arrowDown(),SVG.arrowLeft(),SVG.plus()],a:0},
+  {cat:"Visual",q:"O número de lados cresce a cada célula. Qual completa?",
+   matrix:[{svg:SVG.triangle()},{svg:SVG.square()},{svg:SVG.starOutline()},{svg:SVG.square()},{svg:SVG.starOutline()},{svg:SVG.triangle()},{svg:SVG.starOutline()},{svg:SVG.triangle()},{missing:true}],
+   o:[SVG.circle(),SVG.triangle(),SVG.square(),SVG.diamond(),SVG.star(),SVG.cross()],a:2},
+  {cat:"Visual",q:"A quantidade de barras verticais cresce. Qual completa?",
+   matrix:[{svg:SVG.vBar1()},{svg:SVG.vBar2()},{svg:SVG.vBar3()},{svg:SVG.vBar2()},{svg:SVG.vBar3()},{svg:SVG.vBar1()},{svg:SVG.vBar3()},{svg:SVG.vBar1()},{missing:true}],
+   o:[SVG.vBar1(),SVG.vBar2(),SVG.vBar3(),SVG.bars1(),SVG.bars2(),SVG.bars3()],a:1},
+  {cat:"Visual",q:"Qual célula completa a rotação dos quadrantes?",
+   matrix:[{svg:SVG.quad1()},{svg:SVG.quad3()},{svg:SVG.quad2()},{svg:SVG.quad3()},{svg:SVG.quad2()},{svg:SVG.quad4()},{svg:SVG.quad2()},{svg:SVG.quad4()},{missing:true}],
+   o:[SVG.quad1(),SVG.quad2(),SVG.quad3(),SVG.quad4(),SVG.quad12(),SVG.quad34()],a:2},
+  {cat:"Visual",q:"A figura combina anel externo e interno em progressão. Qual completa?",
+   matrix:[{svg:SVG.ring1()},{svg:SVG.ring2()},{svg:SVG.ring3()},{svg:SVG.ring2()},{svg:SVG.ring3()},{svg:SVG.ring4()},{svg:SVG.ring3()},{svg:SVG.ring4()},{missing:true}],
+   o:[SVG.ring1(),SVG.ring2(),SVG.ring3(),SVG.ring4(),SVG.dot5(),SVG.circleS()],a:0},
+  {cat:"Visual",q:"Observando a alternância, qual figura completa a matriz?",
+   matrix:[{svg:SVG.star()},{svg:SVG.starOutline()},{svg:SVG.star()},{svg:SVG.starOutline()},{svg:SVG.star()},{svg:SVG.starOutline()},{svg:SVG.star()},{svg:SVG.starOutline()},{missing:true}],
+   o:[SVG.star(),SVG.starOutline(),SVG.circle(),SVG.plus(),SVG.cross(),SVG.diamond()],a:0},
+  {cat:"Visual",q:"Os pontos crescem na diagonal principal. Qual completa?",
+   matrix:[{svg:SVG.dot1()},{svg:SVG.dot2()},{svg:SVG.dot3()},{svg:SVG.dot2()},{svg:SVG.dot3()},{svg:SVG.dot4()},{svg:SVG.dot3()},{svg:SVG.dot4()},{missing:true}],
+   o:[SVG.dot1(),SVG.dot2(),SVG.dot3(),SVG.dot4(),SVG.dot5(),SVG.circleS()],a:4},
+  {cat:"Visual",q:"A complexidade cresce somando elementos. Qual completa?",
+   matrix:[{svg:SVG.plus()},{svg:SVG.cross()},{svg:SVG.cross4()},{svg:SVG.cross()},{svg:SVG.cross4()},{svg:SVG.plus()},{svg:SVG.cross4()},{svg:SVG.plus()},{missing:true}],
+   o:[SVG.plus(),SVG.cross(),SVG.cross4(),SVG.circle(),SVG.star(),SVG.diamond()],a:1},
+  {cat:"Visual",q:"A metade preenchida gira em sentido anti-horário. Qual completa?",
+   matrix:[{svg:SVG.halfTop()},{svg:SVG.halfLeft()},{svg:SVG.halfBot()},{svg:SVG.halfLeft()},{svg:SVG.halfBot()},{svg:SVG.halfRight()},{svg:SVG.halfBot()},{svg:SVG.halfRight()},{missing:true}],
+   o:[SVG.halfTop(),SVG.halfRight(),SVG.halfBot(),SVG.halfLeft(),SVG.circleS(),SVG.squareS()],a:0},
+  {cat:"Visual",q:"Quais quadrantes preenchidos completam o padrão?",
+   matrix:[{svg:SVG.quad1()},{svg:SVG.quad12()},{svg:SVG.quad14()},{svg:SVG.quad2()},{svg:SVG.quad23()},{svg:SVG.quad12()},{svg:SVG.quad3()},{svg:SVG.quad34()},{missing:true}],
+   o:[SVG.quad1(),SVG.quad4(),SVG.quad12(),SVG.quad34(),SVG.quad23(),SVG.quad14()],a:2},
+  {cat:"Visual",q:"Cada célula adiciona uma forma. Qual completa?",
+   matrix:[{svg:SVG.circleS()},{svg:SVG.dot2()},{svg:SVG.tri4()},{svg:SVG.dot2()},{svg:SVG.tri4()},{svg:SVG.circleS()},{svg:SVG.tri4()},{svg:SVG.circleS()},{missing:true}],
+   o:[SVG.circleS(),SVG.dot2(),SVG.tri4(),SVG.starX(),SVG.dot4(),SVG.plus()],a:1},
+  {cat:"Visual",q:"Padrão de estrelas completas e vazias se alternando. Qual completa?",
+   matrix:[{svg:SVG.star()},{svg:SVG.circle()},{svg:SVG.starOutline()},{svg:SVG.circle()},{svg:SVG.starOutline()},{svg:SVG.star()},{svg:SVG.starOutline()},{svg:SVG.star()},{missing:true}],
+   o:[SVG.star(),SVG.starOutline(),SVG.circle(),SVG.diamond(),SVG.plus(),SVG.cross()],a:2},
+  {cat:"Visual",q:"Observando as diagonais, qual figura completa?",
+   matrix:[{svg:SVG.squareS()},{svg:SVG.ring1()},{svg:SVG.circleS()},{svg:SVG.ring1()},{svg:SVG.circleS()},{svg:SVG.squareS()},{svg:SVG.circleS()},{svg:SVG.squareS()},{missing:true}],
+   o:[SVG.squareS(),SVG.circleS(),SVG.ring1(),SVG.ring2(),SVG.plus(),SVG.cross()],a:2},
+  {cat:"Visual",q:"A cruz se transforma em X e vice-versa. Qual completa?",
+   matrix:[{svg:SVG.plus()},{svg:SVG.cross()},{svg:SVG.plus()},{svg:SVG.cross()},{svg:SVG.plus()},{svg:SVG.cross()},{svg:SVG.plus()},{svg:SVG.cross()},{missing:true}],
+   o:[SVG.plus(),SVG.cross(),SVG.circle(),SVG.square(),SVG.triangle(),SVG.diamond()],a:0},
+  {cat:"Visual",q:"Cada coluna adiciona um detalhe. Qual completa?",
+   matrix:[{svg:SVG.quad1()},{svg:SVG.quad12()},{svg:SVG.cornerTLBR()},{svg:SVG.quad2()},{svg:SVG.quad23()},{svg:SVG.quad12()},{svg:SVG.quad4()},{svg:SVG.quad14()},{missing:true}],
+   o:[SVG.quad1(),SVG.quad12(),SVG.quad34(),SVG.quad23(),SVG.quad4(),SVG.quad14()],a:4},
+  {cat:"Visual",q:"Anéis crescem e metades giram. Qual completa?",
+   matrix:[{svg:SVG.halfTop()},{svg:SVG.ring1()},{svg:SVG.halfRight()},{svg:SVG.ring1()},{svg:SVG.halfRight()},{svg:SVG.halfBot()},{svg:SVG.halfRight()},{svg:SVG.halfBot()},{missing:true}],
+   o:[SVG.halfTop(),SVG.halfRight(),SVG.halfBot(),SVG.halfLeft(),SVG.ring1(),SVG.ring2()],a:2},
+  {cat:"Visual",q:"Observando o padrão, qual figura completa?",
+   matrix:[{svg:SVG.square(SVG.C,true)},{svg:SVG.square(SVG.C,false)},{svg:SVG.square(SVG.C,true)},{svg:SVG.square(SVG.C,false)},{svg:SVG.square(SVG.C,true)},{svg:SVG.square(SVG.C,false)},{svg:SVG.square(SVG.C,true)},{svg:SVG.square(SVG.C,false)},{missing:true}],
+   o:[SVG.square(SVG.C,true),SVG.square(SVG.C,false),SVG.circle(SVG.C,true),SVG.circle(SVG.C,false),SVG.triangle(),SVG.diamond()],a:0},
+  {cat:"Visual",q:"Progressão de formas cheias alternando padrão diagonal. Qual completa?",
+   matrix:[{svg:SVG.quad1()},{svg:SVG.quad12()},{svg:SVG.quad14()},{svg:SVG.quad2()},{svg:SVG.quad14()},{svg:SVG.quad23()},{svg:SVG.quad14()},{svg:SVG.quad23()},{missing:true}],
+   o:[SVG.quad1(),SVG.quad12(),SVG.quad34(),SVG.quad23(),SVG.quad4(),SVG.quad14()],a:1},
+  {cat:"Visual",q:"A ordem dos triângulos alterna em cada linha. Qual completa?",
+   matrix:[{svg:SVG.triangle()},{svg:SVG.triangleD()},{svg:SVG.triangle()},{svg:SVG.triangleD()},{svg:SVG.triangle()},{svg:SVG.triangleD()},{svg:SVG.triangle()},{svg:SVG.triangleD()},{missing:true}],
+   o:[SVG.triangle(),SVG.triangleD(),SVG.tri4(),SVG.circle(),SVG.diamond(),SVG.plus()],a:0},
+  {cat:"Visual",q:"Contagem decrescente de pontos por coluna. Qual completa?",
+   matrix:[{svg:SVG.dot4()},{svg:SVG.dot3()},{svg:SVG.dot2()},{svg:SVG.dot3()},{svg:SVG.dot2()},{svg:SVG.dot1()},{svg:SVG.dot2()},{svg:SVG.dot1()},{missing:true}],
+   o:[SVG.dot1(),SVG.dot2(),SVG.dot3(),SVG.dot4(),SVG.dot5(),SVG.circleS()],a:0},
+  {cat:"Visual",q:"Cada coluna combina dois elementos. Qual completa?",
+   matrix:[{svg:SVG.dot1()},{svg:SVG.dot2()},{svg:SVG.tri4()},{svg:SVG.dot2()},{svg:SVG.tri4()},{svg:SVG.dot1()},{svg:SVG.tri4()},{svg:SVG.dot1()},{missing:true}],
+   o:[SVG.dot1(),SVG.dot2(),SVG.tri4(),SVG.plus(),SVG.cross(),SVG.star()],a:1}
+];
+
+/* ============== 30 QUESTÕES DE CONHECIMENTO GERAL ============== */
+var KNOWLEDGE_QUESTIONS=[
+  {cat:"Knowledge",q:"Qual é a capital da Austrália?",o:["Sydney","Melbourne","Canberra","Perth","Brisbane","Adelaide"],a:2},
+  {cat:"Knowledge",q:"Quem pintou a Mona Lisa?",o:["Michelangelo","Rafael","Van Gogh","Leonardo da Vinci","Picasso","Donatello"],a:3},
+  {cat:"Knowledge",q:"Qual é o maior planeta do Sistema Solar?",o:["Terra","Saturno","Netuno","Urano","Júpiter","Marte"],a:4},
+  {cat:"Knowledge",q:"Em que ano o homem pisou na Lua pela primeira vez?",o:["1959","1965","1969","1972","1975","1981"],a:2},
+  {cat:"Knowledge",q:"Qual é o elemento químico representado pelo símbolo 'Au'?",o:["Prata","Alumínio","Ouro","Argônio","Cobre","Zinco"],a:2},
+  {cat:"Knowledge",q:"Quantos continentes existem no planeta Terra?",o:["5","6","7","8","4","9"],a:2},
+  {cat:"Knowledge",q:"Quem escreveu 'Dom Quixote'?",o:["Shakespeare","Dante","Cervantes","Goethe","Tolstói","Victor Hugo"],a:2},
+  {cat:"Knowledge",q:"Qual é o rio mais longo do mundo?",o:["Nilo","Amazonas","Yangtzé","Mississippi","Danúbio","Ganges"],a:0},
+  {cat:"Knowledge",q:"Qual é o maior oceano do planeta?",o:["Atlântico","Índico","Ártico","Pacífico","Antártico","Mediterrâneo"],a:3},
+  {cat:"Knowledge",q:"Quantas cordas tem um violão tradicional?",o:["4","5","6","7","8","12"],a:2},
+  {cat:"Knowledge",q:"Qual país tem o formato de uma bota?",o:["Grécia","Itália","Espanha","Portugal","Suíça","Áustria"],a:1},
+  {cat:"Knowledge",q:"Qual é o metal líquido à temperatura ambiente?",o:["Ferro","Chumbo","Mercúrio","Alumínio","Ouro","Prata"],a:2},
+  {cat:"Knowledge",q:"Quem desenvolveu a teoria da relatividade?",o:["Newton","Galileu","Einstein","Tesla","Hawking","Bohr"],a:2},
+  {cat:"Knowledge",q:"Qual é a montanha mais alta do mundo?",o:["K2","Everest","Kilimanjaro","Aconcágua","Mont Blanc","Fuji"],a:1},
+  {cat:"Knowledge",q:"Em que país foi inventada a pizza?",o:["Grécia","França","Itália","Espanha","Portugal","Turquia"],a:2},
+  {cat:"Knowledge",q:"Qual é o símbolo químico da água?",o:["H2O","CO2","O2","NaCl","HCl","CH4"],a:0},
+  {cat:"Knowledge",q:"Quem foi o primeiro presidente do Brasil?",o:["Getúlio Vargas","Deodoro da Fonseca","Dom Pedro II","Juscelino Kubitschek","Prudente de Morais","Floriano Peixoto"],a:1},
+  {cat:"Knowledge",q:"Qual animal é conhecido como o 'rei da selva'?",o:["Tigre","Elefante","Leão","Leopardo","Urso","Lobo"],a:2},
+  {cat:"Knowledge",q:"Qual é a moeda oficial do Japão?",o:["Yuan","Won","Iene","Dólar","Euro","Rupia"],a:2},
+  {cat:"Knowledge",q:"Quantos jogadores tem um time de futebol em campo?",o:["9","10","11","12","13","7"],a:2},
+  {cat:"Knowledge",q:"Qual é o país mais populoso do mundo?",o:["EUA","China","Índia","Indonésia","Paquistão","Brasil"],a:2},
+  {cat:"Knowledge",q:"Qual instrumento mede a temperatura?",o:["Barômetro","Termômetro","Anemômetro","Altímetro","Hidrômetro","Cronômetro"],a:1},
+  {cat:"Knowledge",q:"Qual planeta é conhecido como 'planeta vermelho'?",o:["Vênus","Júpiter","Marte","Saturno","Mercúrio","Netuno"],a:2},
+  {cat:"Knowledge",q:"Quantas cores tem o arco-íris tradicional?",o:["5","6","7","8","9","4"],a:2},
+  {cat:"Knowledge",q:"Quem compôs a 'Nona Sinfonia'?",o:["Mozart","Bach","Beethoven","Chopin","Vivaldi","Wagner"],a:2},
+  {cat:"Knowledge",q:"Qual é o maior deserto do mundo?",o:["Saara","Gobi","Antártida","Kalahari","Atacama","Mojave"],a:2},
+  {cat:"Knowledge",q:"Qual é o idioma mais falado como língua materna?",o:["Inglês","Mandarim","Espanhol","Hindi","Árabe","Português"],a:1},
+  {cat:"Knowledge",q:"Quantos lados tem um triângulo?",o:["2","3","4","5","6","1"],a:1},
+  {cat:"Knowledge",q:"Qual é o principal gás da atmosfera terrestre?",o:["Oxigênio","Nitrogênio","Hidrogênio","Argônio","Gás carbônico","Hélio"],a:1},
+  {cat:"Knowledge",q:"Quem descobriu a penicilina?",o:["Pasteur","Fleming","Koch","Curie","Darwin","Mendel"],a:1}
+];
+
+var QUESTION_BANK=VISUAL_QUESTIONS.concat(KNOWLEDGE_QUESTIONS);
+
+/* ============== HISTÓRICO ============== */
+var HISTORY_KEY="iq_asked_ids_v4";
+var MAX_HISTORY=Math.max(0,QUESTION_BANK.length-QUIZ_SIZE);
+function loadHistory(){try{return JSON.parse(localStorage.getItem(HISTORY_KEY)||"[]");}catch(e){return [];}}
+function saveHistory(h){try{localStorage.setItem(HISTORY_KEY,JSON.stringify(h.slice(-MAX_HISTORY)));}catch(e){}}
+function shuffle(arr){for(var k=arr.length-1;k>0;k--){var j=Math.floor(Math.random()*(k+1));var t=arr[k];arr[k]=arr[j];arr[j]=t;}return arr;}
+function pickQuestions(){
+  var hist=loadHistory();
+  var all=[];
+  for(var i=0;i<QUESTION_BANK.length;i++)all.push(i);
+  var pool=all.filter(function(i){return hist.indexOf(i)<0;});
+  if(pool.length<QUIZ_SIZE){
+    var keep=hist.slice(-(QUESTION_BANK.length-QUIZ_SIZE));
+    saveHistory(keep);
+    pool=all.filter(function(i){return keep.indexOf(i)<0;});
+  }
+  var vis=[],know=[];
+  for(i=0;i<pool.length;i++){
+    if(QUESTION_BANK[pool[i]].cat==="Visual")vis.push(pool[i]);
+    else know.push(pool[i]);
+  }
+  shuffle(vis);shuffle(know);
+  var picked=vis.slice(0,7).concat(know.slice(0,QUIZ_SIZE-7));
+  picked.sort(function(a,b){return a-b;});
+  saveHistory(hist.concat(picked));
+  return picked.map(function(i){return QUESTION_BANK[i];});
+}
+
+/* ============== STATE ============== */
+var state={screen:"start",idx:0,questions:[],answers:[],revealed:[],
+  startTime:0,endTime:0,score:0,result:null,
+  timerId:null,timeLeft:SECONDS_PER_Q,questionStart:0,perQTimes:[]};
+
+function startTimer(){
+  stopTimer();
+  state.timeLeft=SECONDS_PER_Q;
+  state.questionStart=performance.now();
+  updateTimerUI();
+  state.timerId=setInterval(function(){
+    state.timeLeft-=1;
+    if(state.timeLeft<=0){
+      state.timeLeft=0;updateTimerUI();stopTimer();
+      if(state.answers[state.idx]===null)state.answers[state.idx]=-1;
+      state.perQTimes[state.idx]=SECONDS_PER_Q;
+      state.revealed[state.idx]=true;
+      nextQuestion();
+      return;
+    }
+    updateTimerUI();
+  },1000);
+}
+function stopTimer(){if(state.timerId){clearInterval(state.timerId);state.timerId=null;}}
+function updateTimerUI(){
+  var el=document.getElementById("timer");
+  var bar=document.getElementById("tbar-i");
+  if(el){el.textContent=state.timeLeft+"s";el.className="timer"+(state.timeLeft<=10?" warn":"");}
+  if(bar){bar.style.width=(state.timeLeft/SECONDS_PER_Q)*100+"%";bar.className=(state.timeLeft<=10?"warn":"");}
+}
+function nextQuestion(){
+  stopTimer();
+  state.idx++;
+  if(state.idx>=state.questions.length){
+    state.endTime=performance.now();
+    computeResult();
+    state.screen="result";render();
+  } else render();
+}
+function computeResult(){
+  var correct=0;
+  state.questions.forEach(function(q,i){if(state.answers[i]===q.a)correct++;});
+  state.score=correct;
+  var ratio=correct/state.questions.length;
+  var raw=105+(ratio-0.6)*60;
+  var iq=Math.round(raw+(Math.random()*4-2));
+  var L=tLevels();
+  var level;
+  if(iq>=131)level=L.high;
+  else if(iq>=116)level=L.smart;
+  else if(iq>=101)level=L.above;
+  else if(iq>=85)level=L.avg;
+  else if(iq>=75)level=L.below;
+  else level=L.low;
+  var pct=Math.max(1,Math.min(99,Math.round(50+(iq-100)*2.2)));
+  state.result={iq:iq,level:level,correct:correct,pct:pct,seconds:Math.max(1,Math.round((state.endTime-state.startTime)/1000))};
+}
+
+function render(){
+  var app=document.getElementById("app");
+  if(state.screen==="start") app.innerHTML=viewStart();
+  else if(state.screen==="quiz") app.innerHTML=viewQuiz();
+  else if(state.screen==="result") app.innerHTML=viewResult();
+  bind();
+  if(state.screen==="quiz"&&!state.revealed[state.idx]) startTimer();
+  /* AdSense: mostra slot inferior quando terminar */
+  var adBot=document.getElementById("adSlotBottom");
+  if(adBot) adBot.style.display=(state.screen==="result")?"flex":"none";
+  /* AdSense: push nos slots visíveis */
+  setTimeout(function(){
+    try{
+      var slots=document.querySelectorAll(".adsbygoogle");
+      for(var i=0;i<slots.length;i++){
+        if(slots[i].getAttribute("data-adsbygoogle-status"))continue;
+        (window.adsbygoogle=window.adsbygoogle||[]).push({});
+      }
+    }catch(e){}
+  },150);
+}
+function checkIcon(){return '<svg width="20" height="20" viewBox="0 0 18 13" fill="none"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.333" d="m1.31 6.8 4.95 4.95 9.899-9.9"/></svg>';}
+function checkSm(){return '<svg width="18" height="18" viewBox="0 0 18 13" fill="none"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.333" d="m1.31 6.8 4.95 4.95 9.899-9.9"/></svg>';}
+function xSm(){return '<svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 3 L13 13 M13 3 L3 13" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></svg>';}
+
+function viewStart(){
+  return '<div class="card">'+
+    '<h1>'+t("startTitle")+'</h1>'+
+    '<p class="subtitle">'+t("subtitle")+'</p>'+
+    '<ul class="bullets">'+
+      '<li>'+checkIcon()+'<p>'+t("b1")+'</p></li>'+
+      '<li>'+checkIcon()+'<p>'+t("b2")+'</p></li>'+
+      '<li>'+checkIcon()+'<p>'+t("b3")+'</p></li>'+
+    '</ul>'+
+    '<div class="cta-row"><button class="btn" data-act="start">'+t("start")+'</button></div>'+
+    '<p class="avg">'+t("avg")+'</p>'+
+    '<p class="note">'+t("freeNote")+'</p>'+
+  '</div>';
+}
+function questionMark(){return '<svg viewBox="0 0 100 100"><text x="50" y="68" text-anchor="middle" font-family="sans-serif" font-size="52" font-weight="700" fill="#17c964">?</text></svg>';}
+function progressDots(){
+  var html='<div class="progress-dots">';
+  for(var i=0;i<state.questions.length;i++){
+    var cls="pdot";
+    if(i<state.idx){var q=state.questions[i];cls+=(state.answers[i]===q.a)?" done-ok":" done-no";}
+    else if(i===state.idx){cls+=" current";}
+    html+='<span class="'+cls+'"></span>';
+  }
+  html+='</div>';
+  return html;
+}
+
+function viewQuiz(){
+  var i=state.idx,q=state.questions[i];
+  var pct=Math.round((i/state.questions.length)*100);
+  var sel=state.answers[i];
+  var revealed=!!state.revealed[i];
+  var hasMatrix=!!q.matrix;
+  var hasVisualOpts=q.o.length>0&&typeof q.o[0]==="string"&&q.o[0].indexOf("<svg")===0;
+  var html='<div class="card">';
+  html+=progressDots();
+  html+='<div class="q-head"><span>'+t("q")+' '+(i+1)+' '+t("of")+' '+state.questions.length+'</span>';
+  if(revealed){html+='<span style="color:var(--muted);font-size:12px">✓</span>';}
+  else{html+='<span class="timer'+(state.timeLeft<=10?" warn":"")+'" id="timer">'+state.timeLeft+'s</span>';}
+  html+='</div>';
+  html+='<div class="bar"><i style="width:'+pct+'%"></i></div>';
+  if(!revealed){html+='<div class="tbar"><i id="tbar-i" class="'+(state.timeLeft<=10?"warn":"")+'" style="width:'+((state.timeLeft/SECONDS_PER_Q)*100)+'%"></i></div>';}
+  else{html+='<div style="height:4px;margin-bottom:28px"></div>';}
+  html+='<div class="cat">'+catLabel(q.cat)+'</div>';
+  html+='<p class="question">'+q.q+'</p>';
+  if(hasMatrix){
+    html+='<div class="matrix">';
+    for(var m=0;m<q.matrix.length;m++){
+      var c=q.matrix[m];
+      html+= c.missing ? '<div class="mcell missing">'+questionMark()+'</div>' : '<div class="mcell">'+c.svg+'</div>';
+    }
+    html+='</div>';
+  }
+  if(hasVisualOpts){
+    html+='<div class="options-grid">';
+    for(var j=0;j<q.o.length;j++){
+      var cls="opt opt-viz";
+      if(revealed){cls+=" locked";if(j===q.a)cls+=" correct";else if(j===sel)cls+=" wrong";}
+      else if(sel===j)cls+=" selected";
+      html+='<label class="'+cls+'" data-idx="'+j+'">';
+      html+='<input type="radio" name="q" value="'+j+'"'+(sel===j?" checked":"")+(revealed?" disabled":"")+'>';
+      html+=q.o[j];
+      if(revealed){if(j===q.a)html+='<span class="opt-badge">✓</span>';else if(j===sel)html+='<span class="opt-badge">✕</span>';}
+      html+='</label>';
+    }
+    html+='</div>';
+  } else {
+    html+='<div class="options-list">';
+    for(j=0;j<q.o.length;j++){
+      cls="opt";
+      if(revealed){cls+=" locked";if(j===q.a)cls+=" correct";else if(j===sel)cls+=" wrong";}
+      else if(sel===j)cls+=" selected";
+      html+='<label class="'+cls+'" data-idx="'+j+'">';
+      html+='<input type="radio" name="q" value="'+j+'"'+(sel===j?" checked":"")+(revealed?" disabled":"")+'>';
+      html+='<span>'+q.o[j]+'</span>';
+      if(revealed){if(j===q.a)html+='<span class="opt-badge">✓</span>';else if(j===sel)html+='<span class="opt-badge">✕</span>';}
+      html+='</label>';
+    }
+    html+='</div>';
+  }
+  if(revealed){
+    var ok=sel===q.a;
+    html+='<div class="feedback '+(ok?"ok":"no")+'">'+(ok?checkSm():xSm())+'<span>'+(ok?t("youGotIt"):t("youMissed"))+'</span></div>';
+  }
+  html+='<div class="nav">';
+  if(revealed){
+    html+='<div style="flex:1"></div>';
+    html+='<button class="btn" data-act="'+(i===state.questions.length-1?"finish":"next")+'">'+(i===state.questions.length-1?t("finish"):t("next"))+'</button>';
+  } else {
+    html+='<button class="btn ghost" data-act="back"'+(i===0?" disabled":"")+'>'+t("back")+'</button>';
+    html+='<div style="flex:1"></div>';
+  }
+  html+='</div></div>';
+  return html;
+}
+
+function viewResult(){
+  var r=state.result;
+  var html='<div class="card result">';
+  html+='<h1>'+t("yourIQ")+'</h1>';
+  html+='<div class="score">'+r.iq+'</div>';
+  html+='<div class="score-sub">'+t("classLabel")+': <b>'+r.level+'</b></div>';
+  html+='<div class="stats">';
+  html+='<div class="stat"><b>'+r.correct+'/'+state.questions.length+'</b><span>'+t("correct")+'</span></div>';
+  html+='<div class="stat"><b>'+r.seconds+'s</b><span>'+t("time")+'</span></div>';
+  html+='<div class="stat"><b>'+r.pct+'%</b><span>'+t("percentile")+'</span></div>';
+  html+='</div>';
+  html+='<div class="certbox">';
+  html+='<span class="ic">🎓</span>';
+  html+='<h2>'+t("certTitle2")+'</h2>';
+  html+='<p>'+t("certSub2")+'</p>';
+  html+='<button class="btn" data-act="pdf">📄 '+t("download")+'</button>';
+  html+='</div>';
+  html+='<div class="cta-row" style="margin-top:16px">';
+  html+='<button class="btn ghost" data-act="retake">'+t("retake")+'</button>';
+  html+='</div>';
+  html+='</div>';
+  return html;
+}
+
+function bind(){
+  var app=document.getElementById("app");
+  var i=state.idx;
+  if(state.screen==="quiz"&&state.questions[i]&&!state.revealed[i]){
+    var opts=app.querySelectorAll(".opt");
+    for(var k=0;k<opts.length;k++){
+      (function(el){
+        el.addEventListener("click",function(ev){
+          if(el.classList.contains("locked"))return;
+          ev.preventDefault();
+          var j=parseInt(el.getAttribute("data-idx"),10);
+          state.answers[state.idx]=j;
+          state.revealed[state.idx]=true;
+          stopTimer();
+          state.perQTimes[state.idx]=SECONDS_PER_Q-state.timeLeft;
+          render();
+        });
+      })(opts[k]);
+    }
+  }
+  var btns=app.querySelectorAll("[data-act]");
+  for(var b=0;b<btns.length;b++){
+    btns[b].addEventListener("click",function(){
+      var a=this.getAttribute("data-act");
+      if(a==="start"){
+        state.questions=pickQuestions();
+        state.answers=new Array(state.questions.length).fill(null);
+        state.revealed=new Array(state.questions.length).fill(false);
+        state.perQTimes=new Array(state.questions.length).fill(0);
+        state.screen="quiz";state.idx=0;state.startTime=performance.now();render();
+      }
+      else if(a==="next"){nextQuestion();}
+      else if(a==="back"){if(state.idx>0){state.idx--;render();}}
+      else if(a==="finish"){state.endTime=performance.now();computeResult();state.screen="result";render();}
+      else if(a==="retake"){stopTimer();state.screen="start";state.idx=0;state.questions=[];state.answers=[];state.revealed=[];state.result=null;render();}
+      else if(a==="pdf"){askNameAndGenerate();}
+    });
+  }
+}
+
+/* ============== PDF ============== */
+var MiniPDF=(function(){
+  function esc(s){return String(s).replace(/\\/g,"\\\\").replace(/\(/g,"\\(").replace(/\)/g,"\\)").normalize("NFD").replace(/[\u0300-\u036f]/g,"").replace(/[^\x20-\x7E]/g,"");}
+  function stream(c){return "<<\n/Length "+c.length+"\n>>\nstream\n"+c+"\nendstream";}
+  function create(opts){
+    var W=opts.width||842,H=opts.height||595,ops=opts.ops||[],content="";
+    for(var i=0;i<ops.length;i++){
+      var op=ops[i];
+      if(op.type==="rect"){
+        if(op.fill){content+=op.fill.r.toFixed(3)+" "+op.fill.g.toFixed(3)+" "+op.fill.b.toFixed(3)+" rg\n";content+=op.x+" "+(H-op.y-op.h)+" "+op.w+" "+op.h+" re f\n";}
+        if(op.stroke){content+=op.stroke.r.toFixed(3)+" "+op.stroke.g.toFixed(3)+" "+op.stroke.b.toFixed(3)+" RG\n";content+=(op.strokeWidth||1)+" w\n";content+=op.x+" "+(H-op.y-op.h)+" "+op.w+" "+op.h+" re S\n";}
+      } else if(op.type==="line"){
+        content+=op.color.r.toFixed(3)+" "+op.color.g.toFixed(3)+" "+op.color.b.toFixed(3)+" RG\n";
+        content+=(op.thickness||1)+" w\n";
+        content+=op.x1+" "+(H-op.y1)+" m "+op.x2+" "+(H-op.y2)+" l S\n";
+      } else if(op.type==="text"){
+        content+="BT\n";
+        content+=op.color.r.toFixed(3)+" "+op.color.g.toFixed(3)+" "+op.color.b.toFixed(3)+" rg\n";
+        content+="/"+(op.font==="bold"?"F2":"F1")+" "+op.size+" Tf\n";
+        content+="1 0 0 1 "+op.x+" "+(H-op.y-op.size)+" Tm\n";
+        content+="("+esc(op.text)+") Tj\n";
+        content+="ET\n";
+      }
+    }
+    var header="%PDF-1.4\n";
+    var objs=[
+      "<< /Type /Catalog /Pages 2 0 R >>",
+      "<< /Type /Pages /Kids [3 0 R] /Count 1 >>",
+      "<< /Type /Page /Parent 2 0 R /MediaBox [0 0 "+W+" "+H+"] /Contents 4 0 R /Resources << /Font << /F1 5 0 R /F2 6 0 R >> >> >>",
+      stream(content),
+      "<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica /Encoding /WinAnsiEncoding >>",
+      "<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold /Encoding /WinAnsiEncoding >>"
+    ];
+    var body=header,offsets=[0];
+    for(i=0;i<objs.length;i++){offsets.push(body.length);body+=(i+1)+" 0 obj\n"+objs[i]+"\nendobj\n";}
+    var xrefPos=body.length;
+    body+="xref\n0 "+(objs.length+1)+"\n0000000000 65535 f \n";
+    for(i=1;i<=objs.length;i++)body+=String(offsets[i]).padStart(10,"0")+" 00000 n \n";
+    body+="trailer\n<< /Size "+(objs.length+1)+" /Root 1 0 R >>\nstartxref\n"+xrefPos+"\n%%EOF\n";
+    return body;
+  }
+  return {create:create};
+})();
+
+function askNameAndGenerate(){
+  var n=prompt(t("namePrompt"),"");
+  if(n===null)return;
+  generateCertificate((n||"").trim()||"—");
+}
+function pdfText(text,size,bold){
+  var w=0;
+  for(var i=0;i<text.length;i++){
+    var c=text.charCodeAt(i);
+    if(c>=0x20&&c<=0x7E){
+      if(c===32)w+=0.28;
+      else if((c>=48&&c<=57)||(c>=65&&c<=90))w+=0.6;
+      else if(c>=97&&c<=122)w+=0.55;
+      else w+=0.5;
+    }
+  }
+  return w*size*(bold?1.03:1);
+}
+function centerTextX(text,size,W,bold){return (W-pdfText(text,size,bold))/2;}
+
+function generateCertificate(name){
+  var r=state.result,W=842,H=595;
+  var GREEN={r:0.09,g:0.79,b:0.39},DARK={r:0.06,g:0.09,b:0.13},GOLD={r:0.85,g:0.65,b:0.13};
+  var LIGHT={r:0.96,g:0.98,b:1.0},WHITE={r:1,g:1,b:1},BLUE={r:0.29,g:0.36,b:1.0};
+  var RED={r:1,g:0,b:0.3},GREY={r:0.45,g:0.5,b:0.55};
+  var ops=[];
+  ops.push({type:"rect",x:0,y:0,w:W,h:H,fill:LIGHT});
+  ops.push({type:"rect",x:24,y:24,w:W-48,h:H-48,stroke:GREEN,strokeWidth:6});
+  ops.push({type:"rect",x:34,y:34,w:W-68,h:H-68,stroke:GOLD,strokeWidth:1.5});
+  ops.push({type:"rect",x:24,y:24,w:W-48,h:60,fill:DARK});
+  ops.push({type:"rect",x:24,y:24,w:(W-48)/3,h:6,fill:RED});
+  ops.push({type:"rect",x:24+(W-48)/3,y:24,w:(W-48)/3,h:6,fill:GOLD});
+  ops.push({type:"rect",x:24+2*(W-48)/3,y:24,w:(W-48)/3,h:6,fill:BLUE});
+  var title=t("certTitle");
+  ops.push({type:"text",text:title,x:centerTextX(title,34,W,true),y:44,size:34,font:"bold",color:WHITE});
+  var sub=t("certSub");
+  ops.push({type:"text",text:sub,x:centerTextX(sub,13,W,false),y:110,size:13,font:"regular",color:DARK});
+  var present=getLang()==="pt-BR"?"Com orgulho para":(getLang()==="en"?"Proudly presented to":"Para");
+  ops.push({type:"text",text:present,x:centerTextX(present,13,W,false),y:160,size:13,font:"regular",color:GREY});
+  var nw=pdfText(name,40,true);
+  ops.push({type:"text",text:name,x:(W-nw)/2,y:185,size:40,font:"bold",color:DARK});
+  ops.push({type:"line",x1:W/2-nw/2-20,y1:245,x2:W/2+nw/2+20,y2:245,thickness:2,color:GREEN});
+  var boxW=260,boxH=120,boxX=(W-boxW)/2,boxY=265;
+  ops.push({type:"rect",x:boxX,y:boxY,w:boxW,h:boxH,fill:WHITE,stroke:GREEN,strokeWidth:3});
+  var sl=t("certScore");
+  ops.push({type:"text",text:sl,x:centerTextX(sl,13,W,false),y:boxY+16,size:13,font:"regular",color:DARK});
+  var ss=String(r.iq);
+  var scw=pdfText(ss,56,true);
+  ops.push({type:"text",text:ss,x:(W-scw)/2,y:boxY+34,size:56,font:"bold",color:GREEN});
+  var cs=t("certLevel")+": "+r.level;
+  ops.push({type:"text",text:cs,x:centerTextX(cs,16,W,true),y:boxY+boxH+18,size:16,font:"bold",color:GOLD});
+  var date=new Date().toLocaleDateString(getLang(),{year:"numeric",month:"long",day:"numeric"});
+  var id="IQ-"+Date.now().toString(36).toUpperCase();
+  var left=t("certDate")+": "+date;
+  var right=t("certId")+": "+id;
+  ops.push({type:"text",text:left,x:60,y:H-70,size:11,font:"regular",color:DARK});
+  ops.push({type:"text",text:right,x:W-60-pdfText(right,11,false),y:H-70,size:11,font:"regular",color:DARK});
+  var issued=t("certIssued");
+  ops.push({type:"text",text:issued,x:centerTextX(issued,10,W,false),y:H-48,size:10,font:"regular",color:GREY});
+  var pdf=MiniPDF.create({width:W,height:H,ops:ops});
+  var blob=new Blob([pdf],{type:"application/pdf"});
+  var url=URL.createObjectURL(blob);
+  var a=document.createElement("a");
+  a.href=url;a.download="Certificado-QI-"+r.iq+".pdf";
+  document.body.appendChild(a);a.click();document.body.removeChild(a);
+  setTimeout(function(){URL.revokeObjectURL(url);},4000);
+}
+
+/* ============== LANG SWITCHER ============== */
+function renderLang(){
+  var slot=document.getElementById("lang-slot");
+  var code=getLang();
+  var cur=LANGS[0];
+  for(var i=0;i<LANGS.length;i++)if(LANGS[i].code===code)cur=LANGS[i];
+  var html='<div class="lang-switch" data-open="false" id="ls">';
+  html+='<span class="flag">'+FLAGS[cur.flag]+'</span>';
+  html+='<span>'+cur.code.toUpperCase()+'</span>';
+  html+='<svg class="chev" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>';
+  html+='<div class="lang-menu" style="display:none">';
+  for(i=0;i<LANGS.length;i++){
+    var l=LANGS[i];
+    html+='<button data-code="'+l.code+'" data-active="'+(l.code===cur.code)+'">';
+    html+='<span class="flag">'+FLAGS[l.flag]+'</span>';
+    html+='<span>'+l.label+'</span></button>';
+  }
+  html+='</div></div>';
+  slot.innerHTML=html;
+  var ls=document.getElementById("ls");
+  var menu=ls.querySelector(".lang-menu");
+  ls.addEventListener("click",function(e){
+    if(e.target.closest(".lang-menu"))return;
+    var open=ls.getAttribute("data-open")==="true";
+    ls.setAttribute("data-open",String(!open));menu.style.display=open?"none":"block";
+  });
+  var mbtns=menu.querySelectorAll("button");
+  for(i=0;i<mbtns.length;i++){
+    mbtns[i].addEventListener("click",function(){setLang(this.getAttribute("data-code"));});
+  }
+  document.addEventListener("mousedown",function(e){
+    if(!ls.contains(e.target)){ls.setAttribute("data-open","false");menu.style.display="none";}
+  });
+}
+
+/* ============== FOOTER i18n + COPY PIX ============== */
+function applyFooterI18N(){
+  var dt=document.getElementById("donationText");
+  if(dt) dt.textContent=t("donationText");
+  var cp=document.getElementById("btnCopyPixFooter");
+  if(cp) cp.textContent=t("copyPix");
+  var cp2=document.getElementById("creditPrefix");
+  if(cp2) cp2.textContent=t("creditPrefix");
+  var vc=document.getElementById("visitsChip");
+  if(vc) vc.setAttribute("title", t("visitsChipTitle"));
+}
+
+function copyPixFooter(){
+  var btn=document.getElementById("btnCopyPixFooter");
+  var doCopy=function(){
+    var orig=btn.textContent;
+    btn.textContent=t("copied");
+    setTimeout(function(){ btn.textContent=orig; },1600);
+  };
+  var fallback=function(){
+    var ta=document.createElement("textarea");
+    ta.value=PIX_KEY_FOOTER;ta.style.position="fixed";ta.style.opacity="0";
+    document.body.appendChild(ta);ta.select();
+    try{document.execCommand("copy");}catch(e){}
+    document.body.removeChild(ta);doCopy();
+  };
+  if(navigator.clipboard && navigator.clipboard.writeText){
+    navigator.clipboard.writeText(PIX_KEY_FOOTER).then(doCopy).catch(fallback);
+  } else fallback();
+}
+
+/* ============== BOOT ============== */
+try{
+  setTheme(getTheme());
+  document.documentElement.lang=getLang();
+  document.documentElement.dir=getLang()==="ar"?"rtl":"ltr";
+  renderVisits();
+  renderLang();
+  applyFooterI18N();
+  render();
+
+  document.getElementById("themeBtn").addEventListener("click", toggleTheme);
+  var cpBtn=document.getElementById("btnCopyPixFooter");
+  if(cpBtn) cpBtn.addEventListener("click", copyPixFooter);
+}catch(err){
+  console.error("Boot error:",err);
+  document.getElementById("app").innerHTML=
+    '<div class="card boot-error">'+
+    '<h1>Não foi possível carregar</h1>'+
+    '<p>Abra este arquivo diretamente no Chrome, Safari ou Firefox.</p>'+
+    '<p style="font-size:13px;opacity:.7">'+String(err.message||err)+'</p>'+
+    '</div>';
+}
+</script>
+</body>
+</html>
